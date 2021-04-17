@@ -1,0 +1,71 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/ownerInformation/ownerInformation",
+    "pages/enterpriseInformation/enterpriseInformation",
+    "pages/vehicleSelection/vehicleSelection",
+    "pages/sourceDetails/sourceDetails",
+    "pages/issue/issue",
+    "pages/moreInformation/moreInformation",
+    "pages/cargoInformation/cargoInformation",
+    "pages/addressLocation/addressLocation",
+    "pages/logs/logs",
+    "pages/nearby/nearby",
+    "pages/waybill/waybill",
+    "pages/me/me",
+    "pages/newDetaile/newDetaile",
+    "pages/middle/middle",
+    "pages/logisticsInformation/logisticsInformation",
+    "pages/cargoOwnerData/cargoOwnerData",
+    "pages/waybillDetails/waybillDetails",
+    "pages/evaluate/evaluate",
+    "pages/calculator/calculator",
+    "pages/ceshi/ceshi",
+    "pages/historyDetails/historyDetails"
+  ],
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#F38031",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "selectedIconPath": "images/source1.png",
+        "iconPath": "images/source.png",
+        "pagePath": "pages/index/index",
+        "text": "货源"
+      },
+      {
+        "selectedIconPath": "images/nearby1.png",
+        "iconPath": "images/nearby.png",
+        "pagePath": "pages/nearby/nearby",
+        "text": "附近"
+      },
+      {
+        "selectedIconPath": "images/waybill1.png",
+        "iconPath": "images/waybill.png",
+        "pagePath": "pages/waybill/waybill",
+        "text": "运单"
+      },
+      {
+        "selectedIconPath": "images/me1.png",
+        "iconPath": "images/me.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序调起位置请授权"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

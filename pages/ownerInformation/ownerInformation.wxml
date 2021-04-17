@@ -1,0 +1,30 @@
+<!--pages/sourceGoods/sourceGoods.wxml-->
+<view class="owner">
+    <image src="../../images/rt.png" class="heads"></image>
+    <view class="name">上海电子科技有限公司</view>
+    <view class="phone"><image src="../../images/phone.png"></image><text>18300000000</text></view>
+</view>
+
+<view class="lContent1">
+   <text class="textTitle">企业认证信息</text>
+</view>
+<view class="lContent">
+    <view class="informationList">
+       <text class="informationText">社会统一信用代码</text>
+       <view class="time">130000000000000000</view>
+    </view>
+    <view class="informationList">
+       <text class="informationText">企业认证</text>
+       <view class="time cor"><text>已认证</text><image src="../../images/sfz.png"></image></view>
+    </view>
+    <view class="informationList1">
+       <text class="informationText">通讯地址</text>
+       <view class="time">上海市黄浦区</view>
+    </view>
+</view>
+
+
+
+
+
+<!-- <view class="goBtn">接单</view> -->

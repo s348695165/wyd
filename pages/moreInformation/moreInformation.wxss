@@ -1,0 +1,87 @@
+/* pages/moreInformation/moreInformation.wxss */
+/* 选项卡 */
+page{
+  height: 100%;
+}
+.productNav{
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei";
+  height: 100%;
+}
+.left{
+  width: 29%;
+  font-size: 30rpx;
+  background-color: #F4F4F4;
+}
+.left view{
+  text-align: center;
+  height: 120rpx;
+  line-height: 120rpx;
+  /* font-size: 30rpx; */
+}
+.selected{
+  background-color: #fff;
+  font-weight: bold;
+  color: #111111;
+  font-size: 36rpx;
+}
+.normal{
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f2f2f2;
+}
+.right{
+  width:71%;
+  margin: 0;
+}
+swiper{
+  height: 1050rpx;
+}
+.swiper-item view{
+  /* width: 540rpx;
+  height: 200rpx;
+  padding: 25rpx 0 25rpx 20rpx;
+  border-bottom: 1rpx solid #ccc; */
+}
+.content{ padding-left: 40rpx;}
+.contentTop{ height: 120; line-height: 120rpx; overflow: hidden;}
+.topName{
+  font-size: 40rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+  float: left;
+  margin-left: 52rpx;
+}
+  .confirm{ float: right;
+    font-size: 30rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 600;
+    color: #F38031;
+    margin-right: 40rpx;
+  }
+  .conList{
+     height: auto;
+     overflow: hidden;
+  }
+  .list{ height: 92rpx; }
+  .list image{ float: left;width: 28rpx; height: 20rpx; margin-top: 36rpx; margin-right: 24rpx;}
+  .list text{ float: left;
+    font-size: 30rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 600;
+    color: #F38031;
+    height: 92rpx;
+    line-height: 92rpx;
+  }
+
+  .list1{ height: 92rpx; }
+  .list1 image{ float: left;width: 28rpx; height: 20rpx; margin-top: 36rpx; margin-right: 24rpx; opacity: 0;}
+  .list1 text{ float: left;
+    font-size: 30rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 600;
+    color: #111111;
+    height: 92rpx;
+    line-height: 92rpx;
+  }

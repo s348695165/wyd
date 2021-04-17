@@ -1,0 +1,133 @@
+/* pages/cargoInformation/cargoInformation.wxss */
+.content {
+  padding: 0 30rpx;
+  position: relative;
+}
+
+.content1 {
+  padding: 0 30rpx;
+  margin-top: 16rpx;
+}
+
+.search {
+  width: 100%;
+  height: 88rpx;
+  border: 1px solid #D0D0D0;
+  border-radius: 90rpx;
+  background: #f1f1f1;
+}
+
+.searchList {
+  height: auto;
+  overflow: hidden;
+}
+.searchContent{position: absolute; top: 100rpx; left: 0; width: 100%; height: 655rpx;overflow: auto; z-index: 999; background: #fff;}
+.searchContent view{font-size: 30rpx; color: #F38031; height: 110rpx; border-bottom: 1px solid #D0D0D0; line-height: 110rpx; padding-left: 30rpx;}
+.searchContent1{position: absolute; top: 100rpx; left: 0; width: 100%; height: 655rpx;overflow: auto; z-index: 999; background: #fff;}
+.searchContent1 view{ font-size: 30rpx; color: #F38031;height: 110rpx;line-height: 110rpx;padding-left: 30rpx;}
+.list1{
+  color: #F38031 !important;
+  border: 1px solid #F38031 !important;
+}
+.list {
+  float: left;
+  margin-right: 30rpx;
+  padding: 20rpx 39rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #777777;
+  border: 1px solid #BDBDBD;
+  border-radius: 40rpx;
+   margin-top: 30rpx;
+}
+
+.search image {
+  float: left;
+  width: 32rpx;
+  height: 30rpx;
+  margin-top: 29rpx;
+  margin-left: 30rpx;
+}
+
+.searchPl {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+}
+
+.searchInput {
+  height: 88rpx;
+  float: left;
+  margin-left: 10rpx;
+}
+
+.more {
+  height: auto;
+  overflow: hidden;
+  margin-top: 57rpx;
+}
+
+.moreLeft {
+  float: left;
+}
+
+.moreText {
+  font-size: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #111111;
+}
+
+.heng {
+  width: 60rpx;
+  height: 6rpx;
+  background: #F38031;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.moreRight {
+  float: right;
+  height: 24rpx;
+  line-height: 24rpx;
+}
+
+.moreRight image {
+  float: right;
+  width: 13rpx;
+  height: 24rpx;
+}
+
+.moreRight text {
+  margin-right: 10rpx;
+  float: right;
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #000000;
+}
+.titles{
+  padding-left: 30rpx;
+ height: 32rpx;
+ line-height: 32rpx;
+ font-size: 32rpx;
+ font-family: Alibaba PuHuiTi;
+ font-weight: 600;
+ color: #666666; margin: 40rpx 0 20rpx 0;}
+ .ownerRegister{ padding-left: 30rpx; height: auto; overflow: hidden;}
+
+ .textInput{ height: 110rpx; width: 100%;border-bottom: 1px solid #D0D0D0;}
+.textLeft{ float: right; width: 180rpx; text-align: center; font-size: 32rpx; color:#fff; height: 80rpx; line-height: 80rpx;background: #F38031; border-radius: 110rpx; margin-right: 30rpx; margin-top: 15rpx;}
+.textInput input{width: 400rpx; height: 110rpx; border:none; margin: 0; padding:0;   float: left; }
+.textTips{ float: right; font-size: 32rpx; color: #999; text-align: right;  margin-right: 30rpx;height: 110rpx;line-height: 110rpx;}
+.textTips image{    width: 19rpx;
+  height: 34rpx;
+  float: right;
+  /* margin-top: 38rpx; */
+  margin-left: 10rpx;}
+
+  .plCass{ color: #999999; font-size: 32rpx;}

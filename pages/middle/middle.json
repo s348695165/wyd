@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "modalView": "../../component/modal/modal",
+    "taost": "../taost/taost"
+  },
+  "navigationBarTitleText": "发货"
+}

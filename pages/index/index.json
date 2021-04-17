@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "taost": "../taost/taost"
+  },
+  "navigationBarBackgroundColor": "#F38031",
+  "navigationBarTitleText": "慧牧通",
+  "navigationBarTextStyle": "white"
+}

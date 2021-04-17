@@ -1,0 +1,55 @@
+/* pages/taost/taost.wxss */
+.index2Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 1111;
+}
+.goStudy {
+  width: 100%;
+  height: 120rpx;
+  font-size: 28rpx;
+
+
+  align-items: center;
+
+}
+
+.test {
+  margin-left: 15rpx;
+  
+}
+.avatar2 {
+  width: 456rpx;
+  height: 236rpx;
+  margin: 100rpx 0 30rpx 0;
+  /* border: 1px solid #333; */
+}
+.avatar3{
+  width: 656rpx;
+  height: 186rpx;
+  /* margin: 100rpx 0; */
+  margin-top: 60rpx;
+}
+.username {
+  font-size: 32rpx;
+  font-weight: blod;
+  margin: 100rpx 0 50rpx 0;
+  color: #008742;
+}
+button {
+  font-size: 32rpx;
+  background: #008742;
+  color: #fff;
+  box-shadow: 0px 5px 9px 0px rgba(50, 70, 90, 0.3);
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0;
+  margin: 0;
+}

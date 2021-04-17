@@ -1,0 +1,184 @@
+<!--pages/middle/middle.wxml-->
+<view class="lContent">
+  <view class="goOut">
+    <view class="goLeft" data-index="0" bindtap="goFill">
+      <view class="go">
+        <image src="../../images/position.png" class="goImage"></image>
+        <view class="goText">出发地</view>
+        <view class="rightArrow">
+      <image src="../../images/rightArrow.png"></image>
+      <text wx:if="{{nearbyKm!=''&&nearbyKm!=null&&nearbyKm!=undefined&&nearbyKm!='null'&&nearbyKm!='undefined'}}">{{nearby}}</text>
+      <text wx:elif="{{start_addr==''}}">{{selectGo}}</text>
+      <text wx:else>{{start_addr.province}}</text>
+    </view>
+      </view>
+   
+      <!-- <text class="{{setOutA=='选择发货地'?'oText1':'oText'}}">{{setOutA}}</text> -->
+    </view>
+    <!-- <image src="../../images/wang.png" class="wangfan" ></image> -->
+    <view class="goRight" data-index="1" bindtap="goFill">
+      <view class="out">
+        <image src="../../images/position1.png" class="outImage"></image>
+        <view class="goText">卸货地</view>
+        <view class="rightArrow">
+      <image src="../../images/rightArrow.png"></image>
+      <text wx:if="{{end_addr==''}}">{{selectOut}}</text>
+      <text wx:else>{{end_addr.province}} </text>
+    </view>
+      </view>
+      
+      <!-- <text class="{{arriveA=='选择卸货地'?'oText1':'oText'}}">{{arriveA}}</text> -->
+    </view>
+  </view>
+  <!-- <view class="mileage">
+    <image src="../../images/transport.png"></image>
+    <text class="mileageTips">预估运输里程</text>
+    <view class="specific">
+      <text>1260.4</text>/公里
+    </view>
+  </view> -->
+</view>
+<view class="xian"></view>
+<view class="lContent">
+  <view class="informationList">
+    <text class="informationText">货物信息</text>
+    <view class="rightArrow" data-index="3" bindtap="goFill">
+      <image src="../../images/rightArrow.png"></image>
+      <text wx:if="{{typeCont!=''}}">{{typeCont}}</text>
+      <text wx:else>{{selectText}}</text>
+    </view>
+  </view>
+  <view class="informationList">
+    <text class="informationText">货物数量/{{classEs}}</text>
+    <view class="rightArrow" data-index="3" bindtap="goFill">
+      <image src="../../images/rightArrow.png"></image>
+      <input type="text" placeholder="选填"  value="{{counts}}" disabled="true" />
+    </view>
+  </view>
+  <view class="informationList1">
+    <text class="informationText">货物重量/吨</text>
+    <view class="rightArrow" data-index="3" bindtap="goFill">
+      <image src="../../images/rightArrow.png"></image>
+     <input type="text" placeholder="请选择重量" disabled="true" value="{{typeCont1}}" />
+    </view>
+  </view>
+</view>
+  <view class="xian"></view>
+  <view class="lContent">
+  <view class="informationList1">
+    <text class="informationText">车型车长</text>
+    <view class="rightArrow" bindtap="model">
+      <image src="../../images/rightArrow.png"></image>
+      <text>{{selectText1}}</text>
+    </view>
+  </view>
+</view>
+  <view class="xian"></view>
+  <view class="lContent">
+  <view class="informationList">
+    <text class="informationText">装车时间</text>
+    <view class="rightArrow" data-index="2" bindtap="goFill">
+      <image src="../../images/rightArrow.png"></image>
+      <text wx:if="{{starTime!=''}}">{{starTime}}</text>
+      <text wx:else>{{selectOut}}</text>
+    </view>
+  </view>
+
+
+  <view class="informationList1">
+    <text class="informationText">到达时间</text>
+    <view class="rightArrow" data-index="2" bindtap="goFill">
+      <image src="../../images/rightArrow.png"></image>
+      <text wx:if="{{endTime!=''}}">{{endTime}}</text>
+      <text wx:else>{{selectOut}}</text>
+    </view>
+  </view>
+</view>
+  <view class="xian"></view>
+  <view class="lContent">
+  <view class="informationList1">
+    <text class="informationText">运费/元</text>
+    <view class="rightArrow" >
+      <!-- <image src="../../images/rightArrow.png"></image> -->
+     <input type="number" placeholder="请输入运费" bindinput="insertMoney"/>
+    </view>
+  </view>
+</view>
+  <view class="xian"></view>
+ 
+  <view class="lContent">
+  <view class="informationList">
+    <text class="informationText">联系人</text>
+    <view class="rightArrow" >
+      <input type="text" placeholder="请输入联系人" bindinput="insertName" />
+    </view>
+  </view>
+
+  <view class="informationList1">
+    <text class="informationText">联系方式</text>
+    <view class="rightArrow" >
+      <input type="number" placeholder="请输入手机号码" bindinput="insertPhone" />
+    </view>
+  </view>
+</view>
+  <view class="xian"></view>
+  <view class="lContent">
+  <view class="informationList1" wx:if="{{selectCarLength1[0]=='饲料'}}">
+    <text class="informationText">洗消点</text>
+    <!-- <view class="rightArrow">
+      <image src="../../images/rightArrow.png"></image>
+      <text>请选择洗消点</text>
+    </view> -->
+    <view class='select_box'>
+         <view class='select' catchtap='selectTap1'>
+            <text class='select_text'>{{selectindex1}}</text>
+            <image class='select_img {{show1&&"select_img_rotate"}}' src='../../images/rightArrow.png'></image>
+         </view>
+         <!-- <view class='option_box' style='height:{{show1?(selectData1.length>5?300:selectData1.length*60):0}}rpx;'> -->
+          <view class='option_box' style='height:{{show1?300:0}}rpx;display:{{show1?"block":"none"}};'>
+            <text class='option' style='{{index==selectData1.length-1&&"border:0;"}}' wx:for='{{selectData1}}'
+               wx:key='this' data-con="{{item}}" data-id="{{item}}" data-index='{{index}}' catchtap='optionTap1'>{{item}}</text>
+         </view>
+      </view>
+  </view>
+</view>
+<view class="adtitle">
+  <view class="adleft">上传货物照片（选填）</view>
+  <view class="adright">{{nk}}/3</view>
+</view>
+<view class="contImg">
+<view class="sfz cont1" data-index="0" bindtap='upload'>
+      <view class='uploader-list'>
+         <image src='{{pics[0]}}' data-index="{{index}}" mode="scaleToFill" />
+      </view>
+      <!-- <image src="../../images/sfz.png" class="addbg"></image> -->
+      <image src="../../images/shanchu.png" data-index="0" class="del" catchtap="deleteImg" wx:if="{{pics[0]!=''&&pics[0]!=null&&pics[0]!=undefined&&pics[0]!='null'&&pics[0]!='undefined'}}" ></image>
+      <image src="../../images/tianjia.png" class="add"></image>
+   </view>
+   <view class="sfz" data-index="1" bindtap='upload'>
+      <view class='uploader-list'>
+         <image src='{{pics[1]}}' data-index="{{index}}" mode="scaleToFill" />
+      </view>
+      <!-- <image src="../../images/sfz.png" class="addbg"></image> -->
+      <image src="../../images/shanchu.png" data-index="1" class="del" catchtap="deleteImg" wx:if="{{pics[1]!=''&&pics[1]!=null&&pics[1]!=undefined&&pics[1]!='null'&&pics[1]!='undefined'}}"></image>
+      <image src="../../images/tianjia.png" class="add"></image>
+   </view>
+   <view class="sfz" data-index="2" bindtap='upload'>
+      <view class='uploader-list'>
+         <image src='{{pics[2]}}' data-index="{{index}}" mode="scaleToFill" />
+      </view>
+      <!-- <image src="../../images/sfz.png" class="addbg"></image> -->
+      <image src="../../images/shanchu.png" data-index="2" class="del" catchtap="deleteImg" wx:if="{{pics[2]!=''&&pics[2]!=null&&pics[2]!=undefined&&pics[2]!='null'&&pics[2]!='undefined'}}"></image>
+      <image src="../../images/tianjia.png" class="add"></image>
+   </view>
+  </view> 
+<!-- <view class="session">本平台仅用于信息发布</view> -->
+<view class="argeeBtn" bindtap="releaseNew">确认发货</view>
+<taost class="metaost" show1="{{showModal1}}" bind:realNameConfirm="realNameConfirm"></taost>
+<modalView show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+    <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+        <view class="registerMsg">您还不是货主是否去注册?</view>
+      </scroll-view>
+    </view>
+  </modalView>

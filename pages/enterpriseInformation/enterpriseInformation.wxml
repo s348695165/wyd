@@ -1,0 +1,49 @@
+<!--pages/sourceGoods/sourceGoods.wxml-->
+<view class="owner">
+   <!-- <image src="{{personalCon.person_or_company.id_front!=undefined?personalCon.person_or_company.id_front:'../../images/rt.png'}}" class="heads"></image> -->
+   <image src="{{personalCon.avator==undefined?'../../images/rt.png':personalCon.avator}}" class="heads" bindtap="onUpload"></image>
+    <view class="name">{{personalCon.person_or_company.realname==undefined?personalCon.person_or_company.abbr_name:personalCon.person_or_company.realname}}</view>
+    <view class="phone"><image src="../../images/phone.png"></image><text>{{personalCon.person_or_company.phone}}</text></view>
+</view>
+
+<view class="lContent1">
+   <text class="textTitle">身份信息</text>
+</view>
+<view class="lContent">
+    <!-- <view class="informationList">
+       <text class="informationText">个人/企业</text>
+       <view class="time">{{personalCon.person_or_company.id_num}}</view>
+    </view> -->
+    <view class="informationList">
+       <text class="informationText">身份认证</text>
+       <view class="time cor"><text wx:if="{{personalCon.is_sure==1}}">已认证</text><text wx:else>未认证</text><image src="../../images/sfz.png"></image></view>
+    </view>
+    <view class="informationList1">
+       <text class="informationText">通讯地址</text>
+       <view class="time">{{personalCon.person_or_company.address}}</view>
+    </view>
+    <view class="others">
+     <view class="imagesTwo">
+        <image wx:for="{{images}}" wx:if="{{item!=''}}" src="{{item}}" data-src="{{item}}" bindtap="preview"></image>
+     </view>
+  </view>
+</view>
+
+
+<view wx:if="{{isShowImgCropper}}">
+  <image-cropper 
+    id="image-cropper" 
+    limit_move="{{true}}" 
+    disable_rotate="{{true}}" 
+    width="{{width}}" 
+    height="{{height}}" 
+    imgSrc="{{src}}" 
+    bindload="cropperload" 
+    bindimageload="loadimage" 
+    bindtapcut="clickcut"
+  ></image-cropper>
+  <button bindtap="submit" style="position:fixed;bottom:0;z-index:999;width:100%;">确定</button>
+</view>
+
+
+<!-- <view class="goBtn">接单</view> -->

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "image-cropper": "../../component/image-cropper/image-cropper"
+  },
+  "navigationBarTitleText": "货主个人信息"
+}

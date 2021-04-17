@@ -1,0 +1,48 @@
+<!--pages/cargoInformation/cargoInformation.wxml-->
+<view class="content">
+  <!-- <view class="search">
+    <image src="../../images/search.png"></image>
+    <input type="text" class="searchInput" bindinput='inputChange' value='{{ searchValue }}' placeholder="搜索货物关键字" placeholder-class="searchPl" />
+  </view> -->
+  <view class="searchContent" style="display:{{nones}}" wx:if="{{list!=''}}" >
+    <view wx:for="{{list}}" wx:key="{{index}}" data-value="{{item.name}}" bindtap="goTop" >{{item.name}}</view>
+  </view>
+  <view class="searchContent1" style="display:{{nones}}" wx:else>
+   <view>{{lsitmsg}}</view>
+  </view>
+  <view class="more">
+    <view class="moreLeft">
+      <view class="moreText">货品类型</view>
+      <view class="heng"></view>
+    </view>
+    <!-- <view class="moreRight" bindtap="mores">
+      <image src="../../images/rightArrow.png"></image> <text>更多</text>
+    </view> -->
+  </view>
+</view>
+<view class="content1">
+    <view class="searchList">
+        <view class="list {{item.off==true?'list1':''}}" data-index="{{index}}" wx:for="{{selectList1}}" data-id="{{item.id}}" data-value="{{item.value}}" bindtap="goTop">{{item.value}}</view>
+    </view>
+</view>
+<view class="content">
+<view class="more">
+    <view class="moreLeft">
+      <view class="moreText">货重/吨</view>
+      <view class="heng"></view>
+    </view>
+  </view>
+</view>  
+<view class="content1">
+    <view class="searchList">
+        <view class="list {{item.off==true?'list1':''}}" data-index="{{index}}" wx:for="{{selectList1}}" data-id="{{item.id}}" data-value="{{item.value}}" bindtap="goTop">{{item.value}}</view>
+    </view>
+</view>
+<view class="titles">自定义信息</view>
+<view class="ownerRegister">
+
+  <view class="textInput">
+     <view class="textLeft" data-value="{{information}}" bindtap="goTop">确定</view>
+     <input type="text" bindinput='information' value='{{ information }}' placeholder="请输入自定义货物信息" placeholder-class="plCass" />
+  </view>
+</view>

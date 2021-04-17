@@ -1,0 +1,538 @@
+/* pages/middle/middle.wxss */
+/* pages/sourceGoods/sourceGoods.wxss */
+/* page { */
+/* background: #f1f1f1; */
+/* } */
+
+.lContent {
+  padding-left: 30rpx;
+  height: auto;
+  /* overflow: hidden; */
+  background: #fff;
+}
+
+.lContent1 {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+}
+
+.go {
+
+  height: 100rpx;
+
+  /* margin-left: 10rpx; */
+}
+
+.out {
+
+  height: 100rpx;
+  /* margin-left: 10rpx; */
+}
+
+.circular {
+  float: left;
+  width: 26rpx;
+  height: 26rpx;
+  border-radius: 25rpx;
+  margin-top: 5rpx;
+}
+
+.goText {
+  float: left;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #000000;
+
+  margin-left: 20rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+
+}
+
+.oText {
+  text-align: left;
+  font-size: 36rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+  margin-top: 24rpx;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+.oText1 {
+  text-align: left;
+  font-size: 36rpx;
+  /* font-family: Alibaba PuHuiTi; */
+  font-weight: 600;
+  color: #999999;
+  margin-top: 24rpx;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+.wangfan {
+  width: 40rpx;
+  height: 30rpx;
+  float: left;
+  margin-left: 47rpx;
+  margin-top: 70rpx;
+}
+
+.bgGreen {
+  background: #37b231;
+}
+
+.bgYello {
+  background: #f38031;
+}
+
+.circularList {
+  width: 9rpx;
+  height: auto;
+  overflow: hidden;
+  margin: 0 0 10rpx 18rpx;
+}
+
+.spot {
+  width: 9rpx;
+  height: 9rpx;
+  border-radius: 9rpx;
+  background: #cbcbcb;
+  margin-top: 10rpx;
+}
+
+.goOut {
+  /* padding-bottom: 45rpx; */
+  /* border-bottom: 1px solid #D0D0D0; */
+  height: auto;
+  overflow: hidden;
+  /* margin-top: 60rpx; */
+}
+
+.session {
+  font-size: 30rpx;
+  color: #F38031;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.mileage {
+  height: 110rpx;
+}
+
+.mileage image {
+  float: left;
+  width: 40rpx;
+  height: 37rpx;
+  margin-top: 36rpx;
+}
+
+.mileageTips {
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #000000;
+  float: left;
+  margin-left: 13rpx;
+}
+
+.specific {
+  float: left;
+  margin-left: 20rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 30rpx;
+  color: #F38031;
+}
+
+.specific text {
+  font-size: 48rpx;
+}
+
+.textTitle {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #666666;
+  margin: 40rpx 0 20rpx 0;
+  display: block;
+}
+
+.informationList {
+  height: 110rpx;
+  line-height: 110rpx;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.informationList1 {
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+.informationText {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  float: left;
+  color: #000000;
+}
+
+.time {
+  float: right;
+  margin-right: 30rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+}
+
+.ownerInformation {
+  height: 174rpx;
+}
+
+.tx {
+  float: left;
+  width: 104rpx;
+  height: 104rpx;
+  border-radius: 104rpx;
+  margin-top: 35rpx;
+  overflow: hidden;
+}
+
+.tx image {
+  width: 100%;
+  height: 100%;
+}
+
+.informationRight {
+  float: left;
+  margin-left: 30rpx;
+  width: 545rpx;
+}
+
+.rightTop {
+  height: 30rpx;
+  line-height: 32rpx;
+  margin-top: 40rpx;
+}
+
+.ownerName {
+  float: left;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #000000;
+}
+
+.ownerTime {
+  float: right;
+  font-size: 24rpx;
+  font-family: Arial;
+  font-weight: 400;
+  color: #777777;
+}
+
+.rightBot {
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-top: 30rpx;
+}
+
+.botText {
+  float: left;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+}
+
+.botText {
+  float: left;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+
+}
+
+.botText image {
+  width: 28rpx;
+  height: 27rpx;
+  margin-left: 10rpx;
+}
+
+.botText text {
+  color: #F38031;
+}
+
+.isright {
+  margin-right: 95rpx;
+}
+
+.goBtn {
+  width: 410rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #fff;
+  background: #F38031;
+  border-radius: 45rpx;
+  box-shadow: 4px 5px 10px #666;
+  margin: 0 auto;
+  margin-top: 90rpx;
+  margin-bottom: 50rpx;
+}
+
+.informationList input {
+  float: right;
+  height: 110rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  margin-right: 30rpx;
+  text-align: right;
+}
+
+.informationList1 input {
+  float: right;
+  height: 110rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  margin-right: 30rpx;
+  text-align: right;
+}
+
+.plCass {
+  color: #999999;
+}
+
+.rightArrow {
+  float: right;
+  height: 110rpx;
+  margin-right: 30rpx;
+}
+
+.rightArrow text {
+
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  float: right;
+  height: 110rpx;
+  line-height: 110rpx;
+  margin-right: 10rpx;
+}
+
+.rightArrow image {
+  float: right;
+  width: 18rpx;
+  height: 34rpx;
+  margin-top: 38rpx;
+}
+
+.goLeft {
+  float: left;
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.goRight {
+  float: right;
+  width: 100%;
+  height: 100rpx;
+}
+
+.goImage {
+  float: left;
+  width: 29rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+
+.outImage {
+  float: left;
+  width: 29rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+
+.argeeBtn {
+  width: 400rpx;
+  height: 78rpx;
+  line-height: 78rpx;
+  background: #F38031;
+  box-shadow: 0px 5px 9px 0px rgba(50, 70, 90, 0.3);
+  border-radius: 39rpx;
+  font-size: 36rpx;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100rpx;
+  margin-bottom: 100rpx;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 100%;
+  height: 110rpx;
+  /* border:1px solid #efefef; */
+  border-radius: 8rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 20rpx;
+}
+
+/* .select_text{
+  font-size: 30rpx;
+  flex: 1;
+  float: right;
+    font-size: 32rpx;
+    color: #999;
+    text-align: center;
+
+    height: 110rpx;
+    line-height: 110rpx
+ } */
+.select_img {
+  width: 40rpx;
+  height: 40rpx;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.select_img_rotate {
+  transform: rotate(90deg);
+}
+
+.option_box {
+  position: absolute;
+  top: 110rpx;
+  width: 100%;
+  border: 1px solid #D0D0D0;
+  box-sizing: border-box;
+  /* overflow:auto; */
+  overflow-y: auto;
+  border-top: 0;
+  background: #fff;
+  transition: height 0.3s;
+  z-index: 10;
+  margin-top: 1px;
+}
+
+.option {
+  display: block;
+  line-height: 50rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  border-bottom: 1px solid #D0D0D0;
+  padding: 10rpx;
+  text-align: center;
+}
+
+.select_box {
+  position: relative;
+  float: right;
+  width: 300rpx;
+}
+
+.select_box image {
+  width: 19rpx;
+  height: 34rpx;
+  float: right;
+  /* margin-top: 38rpx; */
+  margin-left: 10rpx;
+}
+
+.contImg {
+  height: 280rpx;
+  background: #ffffff;
+}
+
+.cont1 {
+  margin-left: 40rpx;
+}
+
+.sfz {
+  width: 200rpx;
+  height: 200rpx;
+  position: relative;
+  float: left;
+  margin-right: 30rpx;
+  margin-top: 40rpx;
+}
+
+.addbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.del{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+  z-index: 100;
+}
+.add {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.uploader-list {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.uploader-list image {
+  width: 100%;
+  height: 100%;
+}
+
+.adtitle {
+  height: 70rpx;
+  background: #f1f1f1;
+}
+
+.adleft {
+  float: left;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-left: 30rpx;
+  font-size: 32rpx;
+  color: #666666;
+}
+
+.adright {
+  float: right;
+  height: 70rpx;
+  line-height: 70rpx;
+  margin-right: 30rpx;
+  font-size: 32rpx;
+  color: #111111;
+}

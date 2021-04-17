@@ -1,0 +1,67 @@
+/* pages/calculator/calculator.wxss */
+.title {
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: #000;
+  text-align: center;
+}
+.cons{ font-size: 28rpx; color: #333; height: 60rpx; line-height: 60rpx;padding: 0 10rpx;}
+.juzi {
+  width: 420rpx;
+  height: 80rpx;
+  border: 1px solid #d0d0d0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  /* border-radius: 10rpx; */
+  position: relative;
+  /* overflow: hidden; */
+}
+.qi{ position: absolute; top: 80rpx;left: -1px; width: 100%;z-index: 200;}
+.goOut input {
+  width: 300rpx;
+  height: 80rpx;
+  border: 1px solid #d0d0d0;
+  /* border-radius: 5rpx; */
+}
+
+.isCon {
+  height: auto;
+  /* overflow: hidden; */
+}
+
+.ibtnto {
+  display: block;
+  margin: 0 auto;
+  width: 450rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  text-align: center;
+  font-size: 32rpx;
+  /* margin-top: 50rpx; */
+  background: #f38031;
+  color: #fff;
+}
+.tips{color: #f38031;font-size: 26rpx; text-align: center; margin-top: 30rpx; padding: 0 30rpx;}
+.texts{ height: 80rpx;text-align: center;width: 100%; margin-top: 30rpx;color: #f38031; font-size: 30rpx;}
+.manInput input {
+  width: 400rpx;
+  height: 80rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #999999;
+  float: left;
+  margin-left: 20rpx;
+}
+
+scroll-view {                /*最好不要去设置高度*/
+  white-space:nowrap;
+  width:100%;
+  border: 1rpx solid #d0d0d0;
+  background:#fff;
+}
+

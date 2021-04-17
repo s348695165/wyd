@@ -1,0 +1,24 @@
+<!--pages/logisticsInformation/logisticsInformation.wxml-->
+<view></view>
+<view class="goBot">
+   <view class="botContent">
+      <view class="conLeft">1</view>
+      <view class="conText">装货完成</view>
+      <view class="conTime">2020-12-12  20:01</view>
+   </view>
+   <view class="botContent">
+      <view class="conLeft">2</view>
+      <view class="conText">运输中</view>
+      <view class="conTime">2020-12-12  20:01</view>
+   </view>
+   <view class="botContent">
+      <view class="conLeft">3</view>
+      <view class="conText">运输中</view>
+      <view class="conTime">2020-12-12  20:01</view>
+   </view>
+   <view class="botContent">
+      <view class="conLeft">4</view>
+      <view class="conText">即将抵达</view>
+      <view class="conTime">2020-12-12  20:01</view>
+   </view>
+</view>

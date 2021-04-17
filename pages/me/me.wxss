@@ -1,0 +1,251 @@
+/* pages/me/me.wxss */
+.headPortrait {
+  height: 220rpx;
+  background: #F38031;
+}
+
+.headPortraitLeft {
+  float: left;
+  position: relative;
+  margin-left: 40rpx;
+}
+
+.headPortraitLeft image {
+  width: 131rpx;
+  height: 131rpx;
+  border-radius: 50%;
+}
+
+.authentication {
+  width: 90rpx;
+  height: 45rpx;
+  border: 1px solid #F38031;
+  text-align: center;
+  line-height: 45rpx;
+  border-radius: 45rpx;
+  font-size: 20rpx;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: -27rpx;
+  box-shadow: 1px 1px 1px #F38031;
+}
+
+.headPortraitCenter {
+  float: left;
+  margin-left: 40rpx;
+}
+
+.name {
+  font-size: 36rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 24rpx;
+}
+
+.phone {
+  font-size: 24rpx;
+  font-family: Arial;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 18rpx;
+}
+
+.note {
+  text-align: center;
+  width: 100%;
+  height: 300rpx;
+  line-height: 300rpx;
+}
+
+.headPortraitRight {
+  position: relative;
+  float: right;
+  width: 158rpx;
+  height: 96rpx;
+  background: #32465a;
+  border-top-left-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  margin-top: 20rpx;
+}
+
+.rightText {
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+.rightStar {
+  text-align: center;
+  height: 27rpx;
+  line-height: 27rpx;
+  position: absolute;
+  right: 35rpx;
+  top: 55rpx;
+}
+
+.rightStar image {
+  width: 28rpx;
+  height: 27rpx;
+}
+
+.rightStar text {
+  font-size: 24rpx;
+  color: #FFFFFF;
+  margin-left: 6rpx;
+}
+
+.personalTopLeft {
+  float: left;
+  width: 50%;
+}
+
+.topText {
+  text-align: center;
+  font-size: 48rpx;
+  font-family: Arial;
+  font-weight: bold;
+  color: #111111;
+}
+
+.botText {
+  text-align: center;
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+}
+
+.personalTop {
+  margin-top: 60rpx;
+  margin-bottom: 50rpx;
+}
+
+.lContent {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  background: #fff;
+  /* margin-top: 50rpx; */
+}
+
+.personalContent {
+  height: auto;
+  overflow: hidden;
+}
+
+.contentTitle {
+  color: #111111;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  /* padding-top: 40rpx; */
+}
+
+.heng {
+  width: 60rpx;
+  height: 6rpx;
+  background: #F38031;
+  margin: 8rpx 0 0 30rpx;
+}
+
+.iconList {
+  margin-top: 30rpx;
+  height: auto;
+  overflow: hidden;
+}
+
+.huihua {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 111;
+  background-color: transparent;
+  border: none;
+  /*设置按钮边框*/
+}
+
+.isIcon {
+  float: left;
+  width: 25%;
+  height: 130rpx;
+  overflow: hidden;
+  margin-bottom: 60rpx;
+  position: relative;
+}
+
+.isIcon .licheng {
+  width: 77rpx;
+  height: 55rpx;
+  margin-top: 7rpx;
+  margin-bottom: 24rpx;
+}
+
+.isIcon .daohang {
+  width: 69rpx;
+  height: 69rpx;
+  margin-bottom: 17rpx;
+}
+
+.isIcon .toushu {
+  width: 61rpx;
+  height: 62rpx;
+  margin-top: 3.5rpx;
+  margin-bottom: 20rpx;
+}
+
+.isIcon image {
+  display: block;
+  margin: 0 auto;
+}
+
+.isIcon text {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 26rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #111111;
+}
+
+.isIcon .peijian {
+  width: 69rpx;
+  height: 63rpx;
+  margin-bottom: 20rpx;
+}
+
+.isIcon .daikuan {
+  width: 62rpx;
+  height: 63rpx;
+  margin-bottom: 19rpx;
+}
+
+.isIcon .che {
+  width: 75rpx;
+  height: 61rpx;
+  margin-bottom: 20rpx;
+}
+
+.isIcon .jifen {
+  width: 67rpx;
+  height: 65rpx;
+  margin-bottom: 19rpx;
+}
+
+.isIcon .luxian {
+  width: 67rpx;
+  height: 66rpx;
+  margin-bottom: 20rpx;
+}
+
+.heights {
+  height: 160rpx;
+}

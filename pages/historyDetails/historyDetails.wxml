@@ -1,0 +1,119 @@
+<!--pages/sourceDetails/sourceDetails.wxml-->
+<view wx:if="{{listCon==''}}">
+            <image src="../../images/zanwu.png" class="wu"></image>
+            <view class="shuju">{{insertText}}</view>
+         </view>
+         <view wx:else>
+<view class="ownerRegister">
+<view class="sourceContent">
+    <view class="sourceGo">{{listCon.start_addr.province}}</view>
+    <image src="../../images/go.png"></image>
+    <view class="sourceOut">{{listCon.end_addr.province}}</view>
+</view>
+<!-- <view class="estimate">
+   <image src="../../images/ty.png"></image>
+   <text class="estimateTips">预估运输里程</text>
+   <text class="estimateText">{{distance}} 预计用时{{times}}</text>
+</view> -->
+</view>
+<view class="lContent1">
+   <text class="textTitle">装卸信息</text>
+</view>
+<view class="ownerRegister">
+  <view class="textInput">
+     <view class="textLeft">装货时间</view>
+     <view class="textTips1">{{listCon.pre_load_time}}</view>
+     <!-- <view class="textTips">请选择时间 <image src="../../images/rightArrow.png"></image></view> -->
+  </view>
+  <view class="textInput">
+     <view class="textLeft">到达时间</view>
+     <view class="textTips1">{{listCon.to_time}}</view>
+     <!-- <view class="textTips">请选择时间 <image src="../../images/rightArrow.png"></image></view> -->
+  </view>
+  <view class="textInput">
+     <view class="textLeft">装货地</view>
+     <view class="textTips1">{{listCon.start_addr.province}} {{listCon.start_addr.city}} {{listCon.start_addr.area}} </view>
+  </view>
+  <view class="textInput">
+     <view class="textLeft">卸货地</view>
+     <view class="textTips1">{{listCon.end_addr.province}} {{listCon.end_addr.city}} {{listCon.end_addr.area}}</view>
+     <!-- <input type="text" placeholder="选填" placeholder-class="plCass" /> -->
+  </view>
+  <view class="textInput1">
+     <view class="textLeft">需求车辆</view>
+     <view class="textTips1">{{listCon.req_info.car_length.length}}米  {{listCon.req_info.car_type.name}} </view>
+  </view>
+</view>
+<view class="lContent1">
+   <text class="textTitle">货物信息</text>
+</view>
+<view class="ownerRegister">
+  <view class="textInput2">
+     <view class="textLeft">类型</view>
+     <view class="textTips1 colors">{{listCon.goods_info.name}} {{listCon.goods_info.goods_weight}}吨 {{listCon.goods_info.goods_num}}{{listCon.goods_info.unit}}</view>
+  </view>
+  <view class="textInput2">
+     <view class="textLeft">运费</view>
+     <view class="textTips1 colors">{{listCon.hope_price}}元</view>
+  </view>
+  <view class="others">
+     <view class="imagesTwo">
+        <image wx:for="{{images}}" wx:if="{{item!=''}}" src="{{item}}" data-src="{{item}}" bindtap="preview"></image>
+     </view>
+  </view>
+</view>
+
+<view class="lContent1">
+   <text class="textTitle">货主信息</text>
+</view>
+<view class="ownerRegister">
+  <view class="textInput2">
+     <view class="textLeft">联系人</view>
+     <view class="textTips1">{{listCon.con_name}}</view>
+  </view>
+  <view class="textInput2">
+     <view class="textLeft">联系方式</view>
+     <view class="textTips1">{{listCon.con_phone}}</view>
+  </view>
+</view>
+<view class="hei100"></view>
+</view>
+<!-- <view class="lContent1">
+   <text class="textTitle">车辆信息</text>
+</view>
+<view class="ownerRegister">
+   <view class="textInput">
+     <view class="textLeft">货运公司</view>
+     <view class="textTips1">慧牧通物流</view>
+  </view>
+  <view class="textInput1">
+     <view class="textLeft">车辆</view>
+     <view class="textTips1">豫A127R5 冷链运输车 13米/高栏</view>
+  </view>
+</view>
+
+
+<view class="lContent1">
+   <text class="textTitle">保险信息</text>
+</view>
+<view class="ownerRegister">
+   <view class="textInput">
+     <view class="textLeft1">保险公司</view>
+     <view class="textTips1">中国平安保险（集团）股份有限公司</view>
+  </view>
+  <view class="textInput1">
+     <view class="textLeft1">保单号</view>
+     <view class="textTips1">00744747</view>
+  </view>
+</view>
+<view class="height110"></view>
+<view class="isFloat">
+   <view class="floatBtn">编辑[底部浮动]</view>
+</view> -->
+<modalView show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+    <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+        <view class="registerMsg">您还不是货主是否去注册?</view>
+      </scroll-view>
+    </view>
+  </modalView>

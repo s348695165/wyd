@@ -1,0 +1,10 @@
+<!--pages/taost/taost.wxml-->
+
+<view class="index2Container" wx:if='{{show1}}'>
+   <image class="avatar2" src="../../images/logo.png"></image>
+   <text class="username"></text>
+  <view class="goStudy">
+    <button class="test" bindtap="getUserProfile">立即使用</button>
+  </view>
+  <image class="avatar3" src="../../images/innerCont.png"></image>
+</view>

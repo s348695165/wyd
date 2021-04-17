@@ -1,0 +1,124 @@
+<!--pages/index/index.wxml-->
+<movable-area>
+   <movable-view x="{{x}}" y="{{y}}" direction="all">
+      <image class="duihua1" src="../../images/kefu.png"></image>
+      <button class="duihua" open-type="contact"></button>
+   </movable-view>
+   <view>
+      <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+         <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">货源大厅</view>
+         <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">发货历史</view>
+
+      </scroll-view>
+      <view class="bg"></view>
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+         style="height:{{winHeight}}rpx">
+         <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h">
+               <view wx:if="{{lists==''}}">
+                  <image src="../../images/zanwu.png" class="wu"></image>
+                  <view class="shuju">暂无数据</view>
+               </view>
+               <view wx:else>
+                  <view class="lContent" style="height:{{winHeight}}rpx;overflow:auto;">
+                     <view class="goOut" wx:for="{{lists}}" data-id="{{item.id}}" bindtap="goSourceDetails">
+                        <view class="goTime">{{item.addtime}}</view>
+                        <view class="gos">
+                           <view class="circular bgGreen"></view>
+                           <view class="goText">{{item.start_addr.province}}</view>
+                        </view>
+                        <view class="circularList">
+                           <view class="spot"></view>
+                           <view class="spot"></view>
+                           <view class="spot"></view>
+                        </view>
+                        <view class="outs">
+                           <view class="circular bgYello"></view>
+                           <view class="goText">{{item.end_addr.province}}</view>
+                        </view>
+
+                        <view class="security"><text class="securityBtn">安全</text> <text
+                              class="securityText">{{item.req_info.car_type.name}}
+                              {{item.req_info.car_length.length}}米</text></view>
+
+                        <!-- <view class="securityTips">通过平台成交，可查看对方真实号码</view> -->
+                     </view>
+                     <view class="hei200"></view>
+                  </view>
+               </view>
+            </scroll-view>
+
+         </swiper-item>
+         <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h">
+               <!-- <view class="content">
+               <view class="locationSearch">
+                  <image src="../../images/search.png" class="location"></image>
+                  <text class="address">北京市</text>
+                  <image src="../../images/botArrow.png" class="bot"></image>
+                  <image src="../../images/shu.png" class="shu"></image>
+                  <input type="text" bindinput='inputChange' value='{{ searchValue }}' placeholder="输入关键字" class="search" placeholder-class="searchPl" />
+               </view>
+            </view> -->
+               <view wx:if="{{listCon==''}}">
+                  <image src="../../images/zanwu.png" class="wu"></image>
+                  <view class="shuju">暂无数据</view>
+               </view>
+               <view wx:else>
+                  <view class="viewCon" style="height:{{winHeight1}}rpx;overflow:auto;">
+                     <view class="contents" wx:for="{{listCon}}" data-id="{{item.id}}" bindtap="gohistoryDetails">
+                        <!-- <image class="quxiao" src="../../images/quxiao.png"></image> -->
+                        <view class="goto">
+                           <view class="go">{{item.start_addr.province}}</view>
+                           <image src="../../images/go.png"></image>
+                           <view class="to">{{item.end_addr.province}}</view>
+                        </view>
+                        <view class="security">
+                           <view class="securityLable">安全</view>
+                           <text class="securityText">{{item.req_info.car_type.name}}
+                              {{item.req_info.car_length.length}}米</text>
+                           <text class="securityTime">{{item.addtime}}</text>
+                        </view>
+                        <view class="price">
+                           <view class="priceLeft">
+                              <text class="colorText">{{item.hope_price}}</text><text class="tang">元/趟</text>
+                           </view>
+                           <!-- <view class="priceRight" data-index="{{index}}" bindtap="again">再发一单</view> -->
+                        </view>
+                     </view>
+                     <view class="hei200"></view>
+                  </view>
+               </view>
+               
+            </scroll-view>
+         </swiper-item>
+      </swiper>
+   </view>
+   <view class="taost" style="display:none">
+      <view class="taostContent">
+         <view class="conPadding">
+            <view class="taostTop">
+               <view class="addTop">添加路线</view>
+               <view class="close">关闭</view>
+            </view>
+            <view class="vehicleGoOut">
+               <view class="vehicleGo">
+                  <view class="goPlace">北京新发地</view>
+                  <view class="textTips">出发地</view>
+               </view>
+               <image src="../../images/arrive.png"></image>
+               <view class="vehicleOut">
+                  <view class="outPlace">请选择</view>
+                  <view class="textTips1">卸货地</view>
+               </view>
+            </view>
+
+            <view class="tips"><text>*</text>添加成功后，我们会实时推送路线及沿途运单</view>
+            <view class="goBtn">确认添加</view>
+         </view>
+      </view>
+   </view>
+
+</movable-area>
+<taost class="metaost" show1="{{showModal1}}" bind:realNameConfirm="realNameConfirm"></taost>
+<tabbar tabbar="{{tabbar}}"></tabbar>

@@ -1,0 +1,88 @@
+/* pages/vehicleSelection/vehicleSelection.wxss */
+.vehicleLength{
+  height: auto;
+  overflow: hidden;
+   margin-top: 70rpx;
+}
+.vehicleBt{ float: left; margin-left: 40rpx;}
+.vehicleText{
+  
+font-size: 32rpx;
+font-family: Alibaba PuHuiTi;
+font-weight: 600;
+color: #111111;
+/* line-height: 120px; */
+}
+.inputs{height: 80rpx;width: 420rpx; border-radius: 10rpx; background: #f3f3f3;float: left;}
+.vehicleTs input{height: 80rpx;width: 400rpx; border-radius: 10rpx; background: #f3f3f3;float: right;}
+.chang{font-size: 30rpx; color: #BDBDBD;}
+.mi{height: 80rpx;line-height: 80rpx;float: left; margin-left: 20rpx;}
+.heng{width: 120rpx; height: 6rpx;background: #F38031; margin-top: 10rpx;}
+.vehicleTs{
+  float: left;
+  margin-left: 40rpx;
+font-size: 24rpx;
+font-family: Alibaba PuHuiTi;
+font-weight: 400;
+color: #777777;
+}
+.lengthList{ height: auto; overflow: hidden;}
+.list{ float: left;padding: 0 48rpx; height: 70rpx;line-height: 70rpx; text-align: center; border: 1px solid #F38031 !important;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #F38031 !important;
+  border-radius: 10rpx;
+   margin-left: 40rpx;
+   margin-top: 40rpx;
+   background:#f3f3f3 ;
+}
+.list2{ float: left;width: 130rpx; height: 70rpx;line-height: 70rpx; text-align: center; border: 1px solid #F38031 !important;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #F38031 !important;
+  border-radius: 10rpx;
+   margin-left: 40rpx;
+   margin-top: 40rpx;
+   background:#f3f3f3 ;
+}
+.list3{ float: left;width: 130rpx; height: 70rpx;line-height: 70rpx; text-align: center; 
+  border: 1px solid #BDBDBD;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #BDBDBD;
+  border-radius: 10rpx;
+   margin-left: 40rpx;
+   margin-top: 40rpx;
+   background:#f3f3f3 ;
+}
+.list1{ float: left;padding: 0 48rpx; height: 70rpx;line-height: 70rpx; text-align: center; 
+  border: 1px solid #BDBDBD;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #BDBDBD;
+  border-radius: 10rpx;
+   margin-left: 40rpx;
+   margin-top: 40rpx;
+   background:#f3f3f3 ;
+}
+.argeeBtn{
+  width: 400rpx;
+height: 78rpx;
+line-height: 78rpx;
+background: #F38031;
+box-shadow: 0px 5px 9px 0px rgba(50, 70, 90, 0.3);
+border-radius: 39rpx;
+font-size: 36rpx;
+color: #FFFFFF;
+text-align: center;
+margin: 90rpx auto;
+/* margin-top: 90rpx; */
+}
+.choice{ height: 100rpx; line-height: 100rpx;}
+.cancel{ float: left; margin-left: 30rpx;height: 100rpx; line-height: 100rpx;   font-size: 30rpx;}
+.choiceCenter{ float: left;margin-left: 30rpx; font-size: 30rpx;height: 100rpx; line-height: 100rpx; font-weight: 600;}
+.selects{ float: right;font-size: 30rpx;height: 60rpx; line-height: 60rpx; margin-top: 20rpx; width: 130rpx;border-radius: 10rpx; background: #F38031; color: #fff; text-align: center;margin-right: 30rpx;}

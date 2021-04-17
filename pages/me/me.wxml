@@ -1,0 +1,112 @@
+<!--pages/me/me.wxml-->
+<view class="headPortrait">
+  <view class="headPortraitLeft">
+    <!-- <image src="{{personalCon.person_or_company.id_front!=undefined?personalCon.person_or_company.id_front:'../../images/head.png'}}"  catchtap="goInformation" ></image> -->
+    <image src="{{personalCon.avator==undefined?'../../images/head.png':personalCon.avator}}" class="heads" catchtap="goInformation"></image>
+    <view class="authentication" wx:if="{{personalCon.is_sure==1}}">已认证</view>
+    <view class="authentication" wx:else>未认证</view>
+  </view>
+  <view class="headPortraitCenter">
+    <view class="name">{{personalCon.person_or_company.realname}}</view>
+    <view class="phone">{{personalCon.person_or_company.phone}}</view>
+  </view>
+  <view class="headPortraitRight">
+    <view class="rightText">信誉等级</view>
+    <view class="rightStar">
+      <image src="../../images/star.png"></image>
+      <text>{{personalCon.reputation}}</text>
+    </view>
+  </view>
+</view>
+<view class="personalContent">
+  <view class="personalTop">
+    <view class="personalTopLeft">
+      <view class="topText">{{personalCon.point==null?0:personalCon.point}}</view>
+      <view class="botText">完成运单</view>
+    </view>
+    <view class="personalTopLeft">
+      <view class="topText">{{personalCon.reputation==null?0:personalCon.reputation}}</view>
+      <view class="botText">积分</view>
+    </view>
+  </view>
+</view>
+<view class="lContent" style="margin-top:50rpx;">
+  <view class="contentTitle">常用工具</view>
+  <view class="heng"></view>
+</view>
+<view class="iconList">
+    <view class="isIcon" bindtap="gongli">
+       <image src="../../images/licheng.png" class="licheng"></image>
+       <text>里程计算</text>
+    </view>
+   <!--  <view class="isIcon">
+       <image src="../../images/yunfei.png" class="daohang"></image>
+       <text>运费统计</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/jisuan.png" class="toushu"></image>
+       <text>运价计算</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/haoma.png" class="toushu"></image>
+       <text>号码保护</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/dingwei.png" class="peijian"></image>
+       <text>车辆定位</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/toushu.png" class="daikuan"></image>
+       <text>投诉</text>
+    </view> -->
+    <view class="isIcon">
+       <image src="../../images/kefu.png" class="daikuan"></image>
+       <text>我的客服</text>
+       <button class="huihua" open-type="contact"></button>
+    </view>
+</view>
+<!-- <view class="iconList">
+    <view class="note">尚未开放</view>
+</view> -->
+<!-- <view class="lContent">
+  <view class="contentTitle">专属服务</view>
+  <view class="heng"></view>
+</view>
+<view class="iconList">
+    <view class="isIcon">
+       <image src="../../images/baoxian.png" class="peijian"></image>
+       <text>保险</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/daikuan.png" class="daikuan"></image>
+       <text>运费贷</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/fapiao.png" class="che"></image>
+       <text>发票管理</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/jifen.png" class="jifen"></image>
+       <text>积分商城</text>
+    </view>
+    <view class="isIcon">
+       <image src="../../images/luxian.png" class="luxian"></image>
+       <text>最佳运输路线</text>
+    </view>
+</view> -->
+<!-- <view class="iconList">
+    <view class="note">尚未开放</view>
+</view> -->
+
+<view class="heights"></view>
+
+
+<tabbar tabbar="{{tabbar}}"></tabbar>
+<taost class="metaost" show1="{{showModal1}}" bind:realNameConfirm="realNameConfirm"></taost>
+<modalView show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+    <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+        <view class="registerMsg">您还不是货主是否去注册?</view>
+      </scroll-view>
+    </view>
+  </modalView>

@@ -1,0 +1,19 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class="contents">
+<view class="sessiontop">
+  <view class="tx">
+     <image src="../../images/mztx.jpg"></image>
+  </view>
+  <view class="names">
+     <text class="">车主</text>
+     <text class="name">王明</text>
+  </view>
+  <view class="goto">
+     <view class="to">上海 杨浦</view>
+     <image src="../../images/search.png"></image>
+     <view class="go">上海 杨浦</view>
+  </view>
+</view>
+<view class="sessions">整车6.8/9.6/13米 高栏/平板 1-2吨~3-4吨 拷贝</view>
+<textarea class="arrlist" name="" id="" cols="30" rows="10" placeholder="请填写评价内容"></textarea>
+</view>

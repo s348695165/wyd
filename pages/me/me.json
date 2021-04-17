@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "modalView": "../../component/modal/modal",
+    "taost": "../taost/taost"
+  },
+  "navigationBarBackgroundColor": "#F38031",
+  "navigationBarTitleText": "慧牧通",
+  "navigationBarTextStyle": "white"
+}

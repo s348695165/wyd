@@ -1,0 +1,184 @@
+/* pages/issue/issue.wxss */
+.ownerRegister {
+  padding-left: 30rpx;
+  height: auto;
+  /* overflow: hidden; */
+}
+
+.textInput {
+  height: 110rpx;
+  width: 100%;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.textLeft {
+  float: left;
+  width: 220rpx;
+  text-align: left;
+  font-size: 32rpx;
+  color: #000;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+.textInput input {
+  width: 400rpx;
+  height: 110rpx;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  float: right;
+  margin-right: 30rpx;
+}
+
+.textTips image {
+  width: 19rpx;
+  height: 34rpx;
+  float: right;
+  margin-top: 38rpx;
+  margin-left: 10rpx;
+}
+
+.textTips {
+  float: right;
+  font-size: 32rpx;
+  color: #999;
+  text-align: right;
+  margin-right: 30rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+.plCass {
+  color: #999999;
+  font-size: 32rpx;
+}
+
+.textTips1 {
+  float: right;
+  font-size: 32rpx;
+  color: #111111;
+  text-align: right;
+  margin-right: 30rpx;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+/* 自定义 radio 样式 */
+radio .wx-radio-input {
+  border-radius: 50%;
+  width: 28rpx;
+  height: 28rpx;
+}
+
+/* 选中后的样式 （可根据需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%;
+  width: 44rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 28rpx;
+  /* 对勾大小 */
+  color: #fff;
+  /* 对勾颜色 */
+  background: #F38031;
+  border-color: #F38031;
+}
+
+.leftRadio {
+  float: left;
+}
+
+.agree {
+  height: auto;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  width: 390rpx;
+  margin-top: 487rpx;
+}
+.argeeBtn{
+  width: 400rpx;
+height: 78rpx;
+line-height: 78rpx;
+background: #F38031;
+box-shadow: 0px 5px 9px 0px rgba(50, 70, 90, 0.3);
+border-radius: 39rpx;
+font-size: 36rpx;
+color: #FFFFFF;
+text-align: center;
+margin: 0 auto;
+margin-top: 65rpx;
+}
+.argeeText {
+  float: left;
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #111111;
+  margin-top: 15rpx;
+}
+
+.agreementBtn {
+  color: #F38031;
+  margin: 0 10rpx;
+}
+
+/* 选项卡 */
+.productNav{
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei"
+}
+.left{
+  width: 25.3%;
+  /* font-size: 30rpx; */
+  background-color: #f4f4f4;
+}
+.left view{
+  text-align: center;
+  height: 95rpx;
+  line-height: 95rpx;
+  font-size: 26rpx;
+}
+.selected{
+  background-color: #fff;
+  /* font-weight: bold; */
+  color: #F38031;
+}
+.normal{
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #f2f2f2;
+}
+.right{
+  width:74%;
+  margin: 0;
+}
+swiper{
+  height: 890rpx;
+}
+.timeList{
+  width: 100%;
+  height: 95rpx;
+ line-height: 95rpx;
+  text-align: center;
+   font-size: 26rpx;
+}
+.endtaost{
+  position: fixed;
+  width: 100%;
+   height: 100%;
+   z-index: 99;
+   background: rgba(0, 0, 0, 0.5);
+   top: 0;
+   left: 0;
+}
+.taostCon{ width: 100%; height: 1050rpx; position: absolute; bottom: 0; left: 0; background: #fff;}
+.confirms{ height: 100rpx;}
+.confirmLeft{ float: left; height: 100rpx; line-height: 100rpx; font-size: 30rpx; margin-left: 30rpx;}
+.confirmRight{ float: right; height: 60rpx; line-height: 60rpx; width: 150rpx; border-radius: 60rpx; text-align: center;background: #F38031; font-size: 30rpx; margin-right: 30rpx; color: #fff; margin-top: 20rpx;}
+.confirmCenter{float: right; height: 100rpx; line-height: 100rpx; width: 150rpx;  text-align: center; font-size: 30rpx; margin-right: 145rpx;  font-size: 30rpx;}
+.mytext{ height: 60rpx; line-height: 60rpx; text-align: center; font-size: 24rpx; color: #f3b631; background: #fdf3e9;}
+.contents{position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: auto;}

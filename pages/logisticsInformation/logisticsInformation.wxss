@@ -1,0 +1,24 @@
+/* pages/logisticsInformation/logisticsInformation.wxss */
+.goBot{ height: 300rpx; width: 100%; position: fixed; bottom: 0; left: 0;
+  background: #FFFFFF;
+  box-shadow: 0px -8px 9px 0px rgba(50, 70, 90, 0.11);border-top-right-radius: 10px; border-top-left-radius: 10px;}
+  .botContent{ padding: 0 50rpx; height: auto; overflow: hidden; margin-top: 35rpx;}
+  .conLeft{ float: left; width: 34rpx; height: 34rpx; border-radius: 34rpx; background: #32465a;line-height: 34rpx; text-align: center; font-size: 24rpx; color: #fff;}
+  .conText{ float: left;
+    font-size: 32rpx;
+    height: 34rpx;
+    line-height: 34rpx;
+    font-family: Alibaba PuHuiTi;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 10rpx;
+    
+  }
+  .conTime{ float: right;
+    height: 34rpx;
+    line-height: 34rpx;
+font-size: 24rpx;
+font-family: Arial;
+font-weight: 400;
+color: #777777;
+}

@@ -1,0 +1,29 @@
+<!--pages/vehicleSelection/vehicleSelection.wxml-->
+<view class="choice">
+   <!-- <view class="cancel">取消</view> -->
+   <view class="choiceCenter">车型车长</view>
+   <view class="selects" bindtap="goTop">确认</view>
+</view>
+<view class="vehicleLength">
+   <view class="vehicleBt">
+      <view class="vehicleText">车长</view>
+      <view class="heng"></view>
+   </view>
+   <view class="vehicleTs"></view>
+</view>
+<view class="lengthList">
+   <view class="list3 {{item.off==true?'list2':''}}" data-index="{{index}}" wx:for="{{selectList}}" bindtap="selects">{{item.length}}</view>
+  
+</view>
+<view class="vehicleLength">
+   <view class="vehicleBt">
+      <view class="vehicleText">车型</view>
+      <view class="heng"></view>
+   </view>
+   <view class="vehicleTs"></view>
+</view>
+<view class="lengthList">
+   <view class="list1 {{item.off==true?'list':''}}" data-index="{{index}}" wx:for="{{selectList1}}" bindtap="selects1">{{item.name}}</view>
+
+</view>
+<!-- <view class="argeeBtn" bindtap="goTop">确定</view> -->

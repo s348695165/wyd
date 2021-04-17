@@ -1,0 +1,82 @@
+/* pages/evaluate/evaluate.wxss */
+.sessiontop {
+  height: auto;
+  overflow: hidden;
+}
+
+.tx {
+  float: left;
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 48rpx;
+  overflow: hidden;
+}
+
+.tx image {
+  width: 100%;
+  height: 100%;
+}
+
+.names {
+  float: left;
+  margin-left: 14rpx;
+}
+
+.names text {
+  float: left;
+  margin-left: 10rpx;
+  font-size: 30rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-family: Alibaba PuHuiTi;
+}
+
+.name {
+  color: #F38031;
+}
+
+.goto {
+  float: right;
+}
+
+.go {
+  float: right;
+  color: #111111;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+}
+
+.to {
+  float: right;
+  color: #111111;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+}
+
+.goto image {
+  float: right;
+  width: 40rpx;
+  height: 12rpx;
+  margin: 18rpx 10rpx 0 10rpx;
+}
+
+.sessions {
+  font-size: 24rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  margin-top: 17rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #555555;
+}
+
+.arrlist {
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  border-radius: 6px;
+  height: 279rpx;
+  margin-top: 40rpx;
+   width: 100%;
+}

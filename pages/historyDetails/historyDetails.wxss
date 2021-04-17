@@ -1,0 +1,218 @@
+/* pages/sourceDetails/sourceDetails.wxss */
+page {
+  background: #f1f1f1;
+}
+.wu{ width: 332rpx; height: 256rpx; display: block; margin: 0 auto; margin-top: 300rpx;}
+.shuju{ font-size: 35rpx; text-align: center; width: 100%; margin-top: 30rpx; color: #999999;}
+.ownerRegister {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+}
+
+.sourceContent {
+  height: 110rpx;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.sourceGo {
+  float: left;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 48rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+}
+.imagesTwo{
+  width: 100%;
+  height: auto;
+
+}
+.others{height: auto;overflow: hidden; padding-bottom: 30rpx; margin-top: 20rpx;}
+.imagesTwo image{ float: left; width: 210rpx; height: 160rpx; margin-right: 30rpx;}
+.sourceOut {
+  float: left;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 48rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+}
+
+.sourceContent image {
+  float: left;
+  width: 40rpx;
+  height: 14rpx;
+  /* margin-top: 48rpx; */
+  margin: 48rpx 30rpx 0 30rpx;
+}
+
+.estimate {
+  height: 110rpx;
+}
+
+.estimate image {
+  float: left;
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: 38rpx;
+}
+
+.estimateTips {
+  float: left;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 10rpx;
+}
+
+.estimateText {
+  float: left;
+  height: 110rpx;
+  line-height: 110rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #F38031;
+  margin-left: 10rpx;
+}
+.colors{color: #F38031 !important;}
+.textInput {
+  padding: 39rpx 0;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.textInput1 {
+  padding: 39rpx 0;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.textInput2 {
+  padding: 39rpx 0 0 0;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+.textLeft {
+  float: left;
+  width: 150rpx;
+  text-align: left;
+  font-size: 32rpx;
+  color: #000;
+  
+  line-height: 32rpx;
+}
+
+.textInput input {
+  width: 400rpx;
+  height: 110rpx;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  float: right;
+  margin-right: 30rpx;
+}
+
+.textTips image {
+  width: 19rpx;
+  height: 34rpx;
+  float: right;
+  margin-top: 38rpx;
+  margin-left: 10rpx;
+}
+
+.textTips {
+  float: right;
+  font-size: 32rpx;
+  color: #999;
+  text-align: right;
+  margin-right: 30rpx;
+  
+  width: 470rpx;
+  line-height: 32rpx;
+}
+.hei100{ height: 100rpx; background: #fff;}
+.plCass {
+  color: #999999;
+  font-size: 32rpx;
+}
+
+.textTips1 {
+  float: right;
+  font-size: 32rpx;
+  color: #111111;
+  text-align: left;
+  margin-right: 30rpx;
+  width: 470rpx;
+  line-height: 40rpx;
+  margin-top: -5rpx;
+}
+
+.lContent1 {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+
+.textTitle {
+  height: 32rpx;
+  line-height: 32rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #666666;
+  margin: 40rpx 0 20rpx 0;
+  display: block;
+
+}
+
+.textLeft1 {
+  float: left;
+  /* width: 220rpx; */
+  text-align: left;
+  font-size: 32rpx;
+  color: #000;
+
+  line-height: 32rpx;
+}
+
+.isFloat {
+  height: 110rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 5px 9px 0px rgba(50, 70, 90, 0.13);
+  background: #fff;
+}
+
+.floatBtn {
+  width: 400rpx;
+  height: 78rpx;
+  background: #FFFFFF;
+  border: 1px solid #F38031;
+  box-shadow: 0px 5px 9px 0px rgba(50, 70, 90, 0.13);
+  border-radius: 39rpx;
+  margin: 0 auto;
+  text-align: center;
+
+  color: #F38031;
+  font-size: 36rpx;
+  font-family: Alibaba PuHuiTi;
+  line-height: 78rpx;
+  margin-top: 16rpx;
+}
+
+.height110 {
+  height: 110rpx;
+}

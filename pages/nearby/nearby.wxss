@@ -1,0 +1,357 @@
+/* pages/nearby/nearby.wxss */
+.content {
+  padding: 0 30rpx;
+  background: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.height40 {
+  height: 40rpx;
+}
+.wu{ width: 332rpx; height: 256rpx; display: block; margin: 0 auto; margin-top: 300rpx;}
+.shuju{ font-size: 35rpx; text-align: center; width: 100%; margin-top: 30rpx; color: #e6e6e6;}
+.search {
+  height: 80rpx;
+  border: 1px solid #D0D0D0;
+  border-radius: 80rpx;
+  background: #fff;
+}
+
+.search image {
+  width: 32rpx;
+  height: 32rpx;
+  float: left;
+  margin-top: 24rpx;
+  margin-left: 30rpx;
+}
+
+.search input {
+  float: left;
+  width: 400rpx;
+  height: 80rpx;
+  border: none;
+  font-size: 32rpx;
+  margin-left: 16rpx;
+}
+
+.icons {
+  height: 160rpx;
+  margin-top: 30rpx;
+}
+
+.icons image {
+  height: 100%;
+  width: 100%;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-nav {
+  border-bottom: 1rpx solid #fff;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  line-height: 79rpx;
+  position: relative;
+}
+
+.tab-line {
+  position: absolute;
+  left: 0;
+  bottom: -1rpx;
+  height: 6rpx;
+
+  transition: all 0.3s;
+}
+
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.tabLines {
+  width: 60rpx;
+  height: 6rpx;
+  background: #f7982a;
+  display: block;
+  margin: 0 auto;
+}
+
+/*选项卡页面联动切换*/
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 33.33%;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 1rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.botList {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  height: 140rpx;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.content2 {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+}
+
+.contentMe {
+  /* border-bottom: 1px solid #D0D0D0; */
+ 
+}
+
+.conSession {
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #D0D0D0;
+  padding-bottom: 47rpx;
+  padding-top: 56rpx;
+  position: relative;
+}
+
+.names {
+  height: 48rpx;
+}
+
+.contentTop {
+  height: auto;
+  overflow: hidden;
+  margin-top: 32rpx;
+}
+
+.name {
+  float: left;
+  font-size: 48rpx;
+  height: 48rpx;
+  line-height: 48rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+}
+
+.sessionBtn {
+  float: left;
+  width: 125rpx;
+  height: 44rpx;
+  background: #37b231;
+  border-radius: 22rpx;
+  margin-top: 2rpx;
+  margin-left: 20rpx;
+}
+
+.sessionBtn text {
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #FFFFFF;
+  float: left;
+  height: 44rpx;
+  line-height: 44rpx;
+  margin-left: 5rpx;
+}
+
+.sessionBtn image {
+  float: left;
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 14rpx;
+  margin-top: 10rpx;
+}
+
+.contentText {
+  float: left;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #000000;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.downs {
+  float: left;
+  width: 365rpx;
+  height: 80rpx;
+
+  background: #FFFFFF;
+  border: 1px solid #BDBDBD;
+  border-radius: 40rpx;
+  margin-left: 20rpx;
+}
+.searchs{ height: 80rpx; width: 180rpx; text-align: center; line-height: 80rpx; font-family: Alibaba PuHuiTi; color: #F38031; float: right;}
+.downs text {
+  float: left;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 30rpx;
+}
+
+.downs image {
+  float: right;
+  width: 23rpx;
+  height: 14rpx;
+  margin-right: 36rpx;
+  margin-top: 33rpx;
+}
+
+.model {
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #111111;
+  margin-top: 30rpx;
+}
+
+.signCon {
+  /* height: auto;
+  overflow: hidden; */
+  height: 30rpx;
+  line-height: 30rpx;
+  margin-top: 40rpx;
+}
+
+.sign {
+  float: left;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #111111;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.colors {
+  color: #F38031;
+}
+
+.grade {
+  float: left;
+  margin-left: 100rpx;
+  font-size: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #111111;
+}
+
+.sign image {
+  float: left;
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 12rpx;
+  margin-right: 6rpx;
+}
+
+.star {
+  float: left;
+  font-size: 30rpx;
+  font-family: Arial;
+  font-weight: bold;
+  color: #F38031;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.contact{
+  
+font-size: 30rpx;
+font-family: Alibaba PuHuiTi;
+font-weight: 400;
+color: #FEFEFE;
+width: 163rpx;
+height: 58rpx;
+line-height: 58rpx;
+ text-align: center;
+background: #F38031;
+border-radius: 29rpx;
+position: absolute;
+top: 60rpx;
+right: 40rpx;
+}
+.citypickers{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}
+
+.citypicker{
+  
+}
+.citybody {
+  position: fixed;
+  bottom: 0px;
+  background: #fff;
+
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 100%;
+  z-index: 4;
+  background: #e5e5e5;
+
+}
+.hqbtn{ float: left;  width: 130rpx; height: 50rpx; text-align: center; line-height: 50rpx; border: 1px solid #333;box-sizing: border-box; font-size: 22rpx; margin-top: 35rpx; border-radius: 5rpx;}
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.section .picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
+

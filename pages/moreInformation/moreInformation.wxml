@@ -1,0 +1,82 @@
+<!--pages/moreInformation/moreInformation.wxml-->
+<view class='productNav'>
+  <!-- 左侧 -->
+  <view class='left'>
+    <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>新鲜蔬菜</view>
+    <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>时令水果</view>
+    <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>海鲜水产</view>
+    <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>素食熟食</view>
+    <view class="{{active==4?'selected':'normal'}}" id="4" bindtap='switchNav'>酒水饮料</view>
+   
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    <view class="contentTop">
+                <view class="topName">货物信息</view>
+                <view class="confirm" bindtap="goTop">确定</view>
+            </view>
+    <view class='type'>
+      <!-- current:当前所在滑块的 index -->
+      <!-- vertical:滑动方向是否为纵向 -->
+      <swiper class="swiper-item" current='{{currentTab}}' vertical='{{true}}'>
+        <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+        <swiper-item id="0" catchtouchmove="false">
+          <view class="content">
+           
+              <view class="conList">
+                  <view class="{{item.off==true?'list':'list1'}}" data-value="{{item.value}}" data-index="{{index}}" wx:for="{{selectList1}}" bindtap="selects1">
+                    <image src="../../images/dui.png"></image>
+                    <text>{{item.value}}</text>
+                  </view>
+              </view>
+          </view>
+        </swiper-item>
+        <swiper-item id="1" catchtouchmove="false">
+          <view class="content">
+           
+           <view class="conList">
+               <view class="{{item.off==true?'list':'list1'}}" data-value="{{item.value}}" data-index="{{index}}" wx:for="{{selectList1}}" bindtap="selects1">
+                 <image src="../../images/dui.png"></image>
+                 <text>{{item.value}}</text>
+               </view>
+           </view>
+       </view>
+        </swiper-item>
+        <swiper-item id="2" catchtouchmove="false">
+          <view class="content">
+           
+           <view class="conList">
+               <view class="{{item.off==true?'list':'list1'}}" data-value="{{item.value}}" data-index="{{index}}" wx:for="{{selectList1}}" bindtap="selects1">
+                 <image src="../../images/dui.png"></image>
+                 <text>{{item.value}}</text>
+               </view>
+           </view>
+       </view>
+        </swiper-item>
+        <swiper-item id="3" catchtouchmove="false">
+          <view class="content">
+           
+           <view class="conList">
+               <view class="{{item.off==true?'list':'list1'}}" data-value="{{item.value}}" data-index="{{index}}" wx:for="{{selectList1}}" bindtap="selects1">
+                 <image src="../../images/dui.png"></image>
+                 <text>{{item.value}}</text>
+               </view>
+           </view>
+       </view>
+        </swiper-item>
+        <swiper-item id="4" catchtouchmove="false">
+          <view class="content">
+           
+           <view class="conList">
+               <view class="{{item.off==true?'list':'list1'}}" data-id="{{item.id}}" data-value="{{item.value}}" data-index="{{index}}" wx:for="{{selectList1}}" bindtap="selects1">
+                 <image src="../../images/dui.png"></image>
+                 <text>{{item.value}}</text>
+               </view>
+           </view>
+       </view>
+        </swiper-item>
+       
+      </swiper> 
+    </view>
+  </view>
+</view>

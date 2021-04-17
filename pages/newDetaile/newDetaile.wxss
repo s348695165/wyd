@@ -1,0 +1,310 @@
+page{position: relative;}
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  /* padding: 0 60rpx; */
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+}
+
+.swiper-tab-list {
+  font-size: 32rpx;
+  display: inline-block;
+  width: 30%;
+  color: #666666;
+}
+
+.on {
+  color: #FDA53B;
+  /* border-bottom: 5rpx solid #FDA53B; */
+}
+
+.swiper-box {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "苹方-简 常规体";
+  height: 88vh;
+}
+
+.swiper-box .swiper-item {
+  /* padding: 0 25rpx; */
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+
+
+
+
+/* css */
+.about_page{
+  margin: 0 10px;
+}
+.swiper-tab1{
+    width: 80%;
+  margin-left: 10%;
+    /* border-bottom: 2rpx solid #ccc; */
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+}
+.swiper-tab-item1{
+    width: 30%; 
+    color:#666666;
+    font-size: 32rpx;
+}
+.active{
+  font-size: 36rpx;
+  color: #111111;
+  border-bottom: 5rpx solid #FDA53B;
+}
+.juzhong{
+  margin: 0 auto;
+}
+.domain{
+  background-color: #fff;
+  height: 100%;
+  margin:0 10px;
+}
+.show{
+  display: block;
+}
+.hidden{
+  display: none;
+}
+.contents1{padding-left:30rpx ; height: auto; overflow: hidden;}
+.conlist{
+  height: 100rpx;
+  border-bottom: 1px solid #D0D0D0;
+  position: relative;
+}
+.conlist image{ position: absolute; left: 20rpx; top: 40rpx; width: 28rpx; height: 20rpx;}
+.conlist text{ position: absolute; left: 58rpx; top: 0; height: 100rpx; line-height: 100rpx; font-size: 36rpx; color: #111111; }
+.conlist .add{
+  color: #FDA53B;
+}
+.selectAddress{ height: 100rpx; line-height: 100rpx;border-bottom: 1px solid #D0D0D0; font-size: 30rpx;}
+.selectLeft{float: left;}
+.selectRight{ float: left; margin-left: 20rpx;}
+.cons{ height: auto; overflow: hidden;}
+.titles{height: 100rpx; line-height: 100rpx;font-size: 30rpx;}
+.conslist{ height: auto; overflow: hidden;}
+.listview{min-width: 90rpx;
+  padding: 0 30rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  color: #D0D0D0;
+  border-radius: 35rpx;
+ /* box-sizing: border-box; */
+ text-align: center;
+ font-size: 30rpx;
+ float: left;
+ margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.selectd{color: #FDA53B;border: 1px solid #FDA53B;}
+
+.long-dec{
+   margin-top: 30rpx;
+   display: -webkit-box;/*关键属性*/
+   font-size:28rpx;
+   color:#cfcfd0;
+   line-height: 40rpx;
+   word-break: break-all;
+   -webkit-box-orient: vertical;/* 关键属性 */
+   -webkit-line-clamp:2;/* 关键属性 */
+   overflow: hidden;/* 关键属性 */
+   text-overflow:ellipsis;
+padding-bottom:30rpx ;
+border-bottom: 1px solid #D0D0D0;
+}
+.hide{
+display: -webkit-box;
+}
+.show{
+display: block;
+}
+.arrow{
+position: absolute;
+width: 40rpx;
+height: 43rpx;
+left: 50%;
+transform: translate(-50%);
+}
+.lineview{ height: 100rpx; line-height: 100rpx;border-bottom: 1px solid #D0D0D0;}
+.lineview .lineviewLeft{ float: left;height: 100rpx; line-height: 100rpx; color: #000000; font-size: 32rpx;}
+.lineview .lineviewRight{float: right; height: 100rpx; line-height: 100rpx;margin-right: 30rpx;color: #000000; font-size: 32rpx;}
+.lineview .lineviewRight image{ float: right; width: 18rpx; height: 34rpx; margin-top: 33rpx; margin-left: 10rpx;}
+.company-detail{ padding-left:30rpx ;}
+
+.lineview1{ height: 30rpx; line-height: 30rpx; margin-top: 40rpx;}
+.lineview1 .lineviewLeft{ float: left;height: 30rpx; line-height: 30rpx; color: #000000; font-size: 32rpx;}
+.lineview1 .lineviewLeft1{ float: left;height: 60rpx; line-height: 60rpx; color: #000000; font-size: 32rpx;}
+.lineview1 .lineviewRight{float: right; height: 30rpx; line-height: 30rpx;margin-right: 30rpx;color: #F38031; font-size: 24rpx;}
+.lineview1 .lineviewRight1{float: right; height: 60rpx; line-height: 60rpx;margin-right: 30rpx;color: #F38031; font-size: 32rpx;}
+.lineview1 .lineviewRight image{ float: right; width: 16rpx; height: 10rpx; margin-top: 10rpx; margin-left: 10rpx;}
+.lineview1 .lineviewRight1 input{display: block; width: 160rpx; height: 60rpx; border: none; text-align: center; font-size: 32rpx;}
+
+.bots{ position: absolute; bottom: 0; left: 0; width: 100%; height: 140rpx;box-shadow: 0px -6px 7px #D0D0D0; background: #fff;}
+.botleft{width: 310rpx; height: 78rpx; line-height: 78rpx; float: left; margin-left: 45rpx;margin-top: 30rpx;color: #F38031; border: 1px solid #F38031;text-align: center;border-radius: 40rpx;}
+.botright{width: 310rpx; height: 78rpx; line-height: 78rpx; float: right; margin-right: 45rpx;margin-top: 30rpx;color: #ffffff; background: #F38031; border: 1px solid #F38031;text-align: center;border-radius: 40rpx;}
+.hei140{ height: 240rpx;}
+
+/* 日期选择 */
+.canlendarBgView {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.canlendarView {
+  color: #6666CC;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.canlendarTopView {
+  height: 80rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.leftBgView {
+  text-align: right;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+ 
+.leftView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.centerView {
+  width: 50%;
+  height: 80rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.rightBgView {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+}
+ 
+.rightView {
+  width: 80rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.weekBgView {
+  height: 50rpx;
+  line-height: 50rpx;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.weekView {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 28rpx;
+}
+ 
+.dateBgView {
+  height: 500rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+ 
+.dateEmptyView {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dateView {
+  width: 107.1428571429rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.datesView {
+  width: 60rpx;
+  height: 60rpx;
+  color: #6666CC;
+  font-size: 26rpx;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.dateSelectView {
+  border-radius: 50%;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background-color: #6666CC;
+}
+.isconts{ height: 100rpx; border-bottom: 1px solid #D0D0D0;position: relative;}
+.fa{ float: left; height: 100rpx; line-height: 100rpx; font-size: 30rpx; margin-left: 30rpx;}
+.dao{ float: right; height: 100rpx; line-height: 100rpx;font-size: 30rpx; margin-right: 30rpx;}
+.tian{float: left; height: 100rpx; line-height: 100rpx;font-size: 30rpx; font-weight: 600;position: absolute; left: 50%; top: 0; width: 300rpx; text-align: center; margin-left: -150rpx;}
+#rili{position:absolute; top: 0; left: 0; width: 100%;z-index: 999;}
+.detailedAdd{ height: auto; overflow: hidden; width: 100%;border-bottom: 1px solid #D0D0D0;}
+.detailedAdd input {
+  float: left;
+  height: 110rpx;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #333;
+  /* margin-left: 30rpx; */
+  text-align: left;
+  width: 100%;
+}
+.noinput{
+  color: #999999;
+}

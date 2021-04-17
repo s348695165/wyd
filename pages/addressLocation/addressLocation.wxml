@@ -1,0 +1,57 @@
+<!--pages/addressLocation/addressLocation.wxml-->
+<view class="content">
+  <view class="locationSearch">
+  <view class="addressCan" bindtap="open">
+     <image src="../../images/position2.png" class="location"></image>
+     <text class="address">{{province}}</text>
+     <text style="display:none;">{{province}}-{{city}}-{{county}}</text>
+     <image src="../../images/botArrow.png" class="bot"></image>
+   </view>
+     <image src="../../images/shu.png" class="shu"></image>
+     <input type="text" bindinput='inputChange' value='{{ can }}' placeholder="输入详细地址" class="search" placeholder-class="searchPl" />
+  </view>
+  <view class="searchContent" style="display:{{nones}}" >
+    <view class="conShow">
+    <view class="cons" wx:for="{{list}}" wx:key="{{index}}" data-value="{{item.name}}" data-id="{{item.id}}" bindtap="goCon" >{{item.name}}</view>
+  </view>
+    <view class="argeeBtn" bindtap="goTop">确定</view>
+  </view>
+  <view class="currentLocation" data-value="{{addressK}}" data-id="20" bindtap="goTopTwo">
+     <view class="currentName">{{formatted_addresses}}</view>
+     <view class="currentTips">
+        <view class="currentBtn">当前位置</view>
+        <text>{{addressK}}</text>
+     </view>
+  </view>
+</view>
+<view class="lContent1">
+   <text class="textTitle">常用地址列表</text>
+</view>
+<view class="lContent">
+    <!-- <view class="informationList" data-value="北京国际设计交流中心" data-id="20" bindtap="goTop">
+       <text class="informationText">北京国际设计交流中心</text>
+       <view class="time">北京市杨浦区国康路100号</view>
+    </view>
+    <view class="informationList" data-value="北京国际设计交流中心" data-id="20" bindtap="goTop">
+       <text class="informationText">北京国际设计交流中心</text>
+       <view class="time">北京市杨浦区国康路100号</view>
+    </view> -->
+</view>
+
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="open" class="city-cancel">取消</view>
+      <view bindtap="open" class="city-true">确定</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

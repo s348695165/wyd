@@ -1,0 +1,97 @@
+<!--pages/waybill/waybill.wxml-->
+<!-- 这里是内容展示  -->
+<scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+   <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">全部</view>
+   <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">待确认</view>
+   <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">运输中</view>
+   <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">已完成</view>
+</scroll-view>
+<view class="bg"></view>
+<swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+   style="height:{{winHeight1}}rpx">
+   <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+         <view wx:if="{{listCon==''}}">
+            <image src="../../images/zanwu.png" class="wu"></image>
+            <view class="shuju">暂无数据</view>
+         </view>
+         <view wx:else>
+            <view class="viewCon" style="height:{{winHeight1}}rpx;overflow:auto;">
+               <view class="contents" wx:for="{{listCon}}" data-id="{{item.id}}" bindtap="goSourceDetails">
+                  <view class="contentsRight">
+                     <view class="goto">
+                        <view class="go">{{item.start_addr.province}}</view>
+                        <view class="confirmed">待确认</view>
+                        <image src="../../images/reach.png"></image>
+                        <view class="to">{{item.end_addr.province}}</view>
+                     </view>
+                     <view class="gotoDetails">
+                        <view class="detailsLeft">
+                           <text
+                              class="dContent">{{item.req_info.car_type.name}}/{{item.req_info.car_length.length}}米</text>
+                           <text class="istime">{{item.addtime}}</text>
+                        </view>
+                        <!-- <view class="detailsRight">
+                        <view class="accept">接单</view>
+                     </view> -->
+                     </view>
+
+                     <view class="survey">{{item.goods_info.name}} {{item.goods_info.goods_weight}}吨
+                        {{item.goods_info.goods_num}}/{{item.goods_info.unit}}</view>
+                  </view>
+                  <view class="sponsor">
+                     <view class="topList" wx:if="{{item.status!=0}}">
+                        <view class="sponsorLeft" data-id="{{item.car_user_id}}" catchtap="goSession">
+                           <view class="tx">
+                              <image src="../../images/mztx.jpg"></image>
+                           </view>
+                           <view class="istext">接单人<text>王*明</text></view>
+                        </view>
+                        <view class="sponsorCenter">
+                           <view class="istext">交易<text>22</text>笔</view>
+                        </view>
+                        <view class="sponsorRight">
+                           <view class="istext">信誉等级<image src="../../images/star.png" class="star"></image>
+                              <text>22</text>
+                           </view>
+                        </view>
+                     </view>
+                     <view class="topNull" wx:else>暂无人接单</view>
+                     <view class="logistics">
+                        <view class="leftLables" wx:if="{{car_user_id!=null&&car_user_id!=''&&car_user_id!=undefined}}">
+                           确认</view>
+                        <view class="leftLables1" data-id="{{item.id}}" data-st="{{item.status}}" catchtap="del"
+                           wx:if="{{item.status==0}}">删除</view>
+                        <!-- <view class="see" catchtap="goLogistics">
+                        <image src="../../images/rightYello.png"></image>
+                        <text>查看物流信息</text>
+                     </view> -->
+                     </view>
+
+
+                  </view>
+
+               </view>
+               <view class="hei200"></view>
+            </view>
+         </view>
+
+      </scroll-view>
+
+   </swiper-item>
+   <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+
+      </scroll-view>
+   </swiper-item>
+</swiper>
+
+<tabbar tabbar="{{tabbar}}"></tabbar>
+<taost class="metaost" show1="{{showModal1}}" bind:realNameConfirm="realNameConfirm"></taost>
+<modalView show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+   <view class='modal-content'>
+      <scroll-view scroll-y class='main-content'>
+         <view class="registerMsg">您还不是货主是否去注册?</view>
+      </scroll-view>
+   </view>
+</modalView>

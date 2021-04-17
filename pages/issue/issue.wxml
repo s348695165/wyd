@@ -1,0 +1,78 @@
+<!--pages/issue/issue.wxml-->
+<view class="ownerRegister">
+  <view class="textInput">
+     <view class="textLeft">装货时间</view>
+     <!-- <view class="textTips">请选择时间 <image src="../../images/rightArrow.png"></image></view> -->
+     <view class='select_box'>
+         <view class='select' catchtap='showtime'>
+            <text class='select_text'>{{selectindex}}</text>
+            <image class='select_img {{show&&"select_img_rotate"}}' src='../../images/rightArrow.png'></image>
+         </view>
+         <!-- <view class='option_box' style='height:{{show?300:0}}rpx;display:{{show?"block":"none"}};'>
+            <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}'
+               wx:key='this' data-con="{{item}}" data-id="{{item}}" data-index='{{index}}' catchtap='optionTap1'>{{item}}</text>
+         </view> -->
+      </view>
+  </view>
+  <!-- <view class="textInput">
+     <view class="textLeft">服务要求</view>
+    <view class="textTips1">到付/高价急走/需回单</view> 
+     <input type="text" bindinput="requirement" value="{{requirement}}" placeholder="请输入服务要求" placeholder-class="plCass" />
+  </view> -->
+  <view class="textInput">
+     <view class="textLeft">期望运费 元/趟</view>
+     <input type="text" bindinput="requirement1" value="{{requirement1}}" placeholder="选填" placeholder-class="plCass" />
+  </view>
+  <view class="textInput">
+     <view class="textLeft">备注</view>
+     <input type="text" bindinput="requirement2" value="{{requirement2}}" placeholder="请输入备注" placeholder-class="plCass" />
+  </view>
+</view>
+<view class="agree">
+   
+<view class="leftRadio" bindtap='checkedTap'>
+      <radio checked="{{checked}}"></radio>
+</view>
+   <view class="argeeText">
+      <text>我已阅读并同意</text>
+      <text class="agreementBtn">慧牧通运输</text>
+      <text>协议</text>
+   </view>
+</view>
+<view class="argeeBtn" bindtap="deliverGoods">发货</view>
+<view class="endtaost" style="display:{{displayTwo}}">
+   <view class="taostCon">
+   <view class="confirms">
+      <view class="confirmLeft"  catchtap="hidetime">取消</view>
+      <view class="confirmRight" catchtap="assignment">确认</view>
+      <view class="confirmCenter">装货时间</view>
+   </view>
+   <view class="mytext">填写准确装货时间,可防司机误抢哦</view>
+<view class='productNav'>
+  <!-- 左侧 -->
+  <view class='left'>
+    <view class="{{active==idx?'selected':'normal'}}" id="{{idx}}" data-index="{{idx}}" bindtap='switchNav' wx:for="{{timeLists}}" wx:for-index="idx">{{item.day}}</view>
+   
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    <view class='type'>
+      <!-- current:当前所在滑块的 index -->
+      <!-- vertical:滑动方向是否为纵向 -->
+      <swiper class="swiper-item" current='{{currentTab}}' vertical='{{true}}'>
+        <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+        <swiper-item  data-index="{{index}}" catchtouchmove="false" wx:for="{{timeLists}}" wx:for-index="not">
+          
+          
+          <scroll-view scroll-y="true" style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+            <view class="timeList {{pro.off==true?'selected':''}}" data-topindex="{{not}}" data-index="{{index}}"  wx:for="{{item.con}}" wx:for-item="pro" bindtap="gotime">{{pro.value}}</view>
+        </scroll-view>
+        </swiper-item>
+       
+      </swiper> 
+    </view>
+  </view>
+</view>
+
+</view>
+</view>

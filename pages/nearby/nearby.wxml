@@ -1,0 +1,74 @@
+<!--pages/nearby/nearby.wxml-->
+<view class="bg"></view>
+<view class="content2">
+  <view class="contentMe">
+    <view class="contentTop">
+      <view class="contentText">切换城市</view>
+      <view class="downs" bindtap="open">
+        <text>{{city}}-{{county}}</text>
+        <image src="../../images/botArrow.png"></image>
+      </view>
+      <!-- <view class="downs">
+         <text>全国</text>
+         <image src="../../images/botArrow.png"></image>
+      </view> -->
+      <view class="searchs" bindtap="searchs">搜索</view>
+    </view>
+  </view>
+  <view wx:if="{{listCon==''}}">
+    <image src="../../images/zanwu.png" class="wu"></image>
+    <view class="shuju">暂无数据</view>
+  </view>
+  <view wx:else>
+    <view class="conSession" wx:for="{{listCon}}">
+      <view class="contact" data-uid="{{item.car_user_info.caruserinfo.uid}}" bindtap="gotall">联系TA</view>
+      <view class="names">
+        <text class="name">{{item.car_user_info.personinfo}}</text>
+        <view class="sessionBtn">
+          <image src="../../images/times.png"></image>
+          <text>闲置中</text>
+        </view>
+      </view>
+      <view class="model">车型：{{item.car_info.car_type}} {{item.car_info.length}}米 {{item.car_info.weight}}吨</view>
+      <view class="signCon">
+        <view class="sign">
+          成交<text class="colors">{{item.car_user_info.caruserinfo.suc_times}}</text>笔
+        </view>
+        <view class="sign">
+          <text class="grade">信誉等级</text>
+          <image src="../../images/star.png"></image>
+          <text class="star">{{item.car_user_info.caruserinfo.reputation}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="hei200"></view>
+  </view>
+ 
+</view>
+<view wx:if="{{condition}}" class="citypicker">
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}"
+    bindchange="bindChange" class="citybody">
+    <view class="cityheader">
+      <view bindtap="open" class="city-cancel">关闭</view>
+      <view bindtap="open" class="city-true">确认</view>
+    </view>
+    <picker-view-column>
+      <view wx:for="{{provinces}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{citys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{countys}}" wx:key="item" style="line-height: 50px;padding-left:10px;">{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>
+<tabbar tabbar="{{tabbar}}"></tabbar>
+<taost class="metaost" show1="{{showModal1}}" bind:realNameConfirm="realNameConfirm"></taost>
+<modalView show="{{showModal}}" bindcancel="modalCancel" bindconfirm='modalConfirm' single='{{single}}'>
+  <view class='modal-content'>
+    <scroll-view scroll-y class='main-content'>
+      <view class="registerMsg">您还不是货主是否去注册?</view>
+    </scroll-view>
+  </view>
+</modalView>

@@ -1,0 +1,403 @@
+/* pages/waybill/waybill.wxss */
+.tab-h {
+  height: 80rpx;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  background: #F38031;
+  font-size: 16px;
+  white-space: nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.tab-item {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+
+.tab-item.active {
+  font-size: 36rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #FFFFFF;
+  opacity: 1;
+  position: relative;
+}
+
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 0rpx;
+  width: 52rpx;
+  background: #4675F9;
+  position: absolute;
+  bottom: 0;
+  left: 5rpx;
+  border-radius: 16rpx;
+}
+
+.item-ans {
+  width: 100%;
+  display: flex;
+  flex-grow: row no-wrap;
+  justify-content: space-between;
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 180rpx;
+  align-items: center;
+  border-bottom: 1px solid #F2F2F2;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  padding-right: 30rpx;
+}
+
+.avatar .img {
+  width: 100%;
+  height: 100%;
+}
+
+.avatar .doyen {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  bottom: -2px;
+  right: 20rpx;
+}
+
+.expertInfo {
+  font-size: 12px;
+  flex-grow: 2;
+  color: #B0B0B0;
+  line-height: 1.5em;
+}
+
+.expertInfo .name {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 6px;
+}
+
+.askBtn {
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 60rpx;
+  border: 1px solid #4675F9;
+  color: #4675F9;
+}
+
+.tab-content {
+  margin-top: 80rpx;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+   background: #fff;
+}
+
+.scoll-h {
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
+}
+.bg {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  top: 80rpx;
+  left: 0;
+  z-index: -1;
+  background: #F38031;
+}
+.contents {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+}
+.contentsRight{
+  padding-right: 30rpx;
+  height: auto;
+  overflow: hidden;
+  background: transparent;
+}
+
+.model {
+  float: left;
+  font-size: 32rpx;
+  color: #111111;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  height: 110rpx;
+  line-height: 110rpx;
+}
+
+.model image {
+  width: 34rpx;
+  height: 34rpx;
+  float: left;
+  margin-top: 38rpx;
+  margin-right: 20rpx;
+}
+
+.modelContent {
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  height: 110rpx;
+  line-height: 110rpx;
+  color: #111111;
+  float: right;
+  background: #fff;
+}
+
+swiper-item {}
+
+.go {
+  float: left;
+  font-size: 36rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+
+.to {
+  float: left;
+  font-size: 36rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #111111;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+.see{ float: right;}
+.goto {
+  display: block;
+  height: 48rpx;
+  padding-top: 38rpx;
+  position: relative;
+}
+.confirmed{
+  position: absolute;
+  top: 38rpx;
+  right: 0rpx;
+  color: #32465A;
+  
+font-size: 30rpx;
+}
+.goto image {
+  float: left;
+  width: 40rpx;
+  height: 13rpx;
+  margin: 18rpx 30rpx 0 30rpx;
+}
+
+.gotoDetails {
+  height: auto;
+  overflow: hidden;
+  margin-top: 40rpx;
+}
+
+.detailsLeft {
+  float: left;
+  width: 100%;
+}
+
+.dContent {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  color: #555555;
+  float: left;
+}
+
+.istime {
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+  font-family: Arial;
+  font-weight: 600;
+  color: #999999;
+  display: block;
+  /* margin-top: 20rpx; */
+  float: right;
+}
+.logistics{
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+.detailsRight {
+  float: right;
+}
+.logistics text{
+  float: right;
+  height: 110rpx;
+   line-height: 110rpx;
+font-size: 30rpx;
+font-family: Alibaba PuHuiTi;
+font-weight: 400;
+text-decoration: underline;
+color: #F38031;
+ margin-right: 10rpx;
+
+}
+
+.wu{ width: 332rpx; height: 256rpx; display: block; margin: 0 auto; margin-top: 300rpx;}
+.shuju{ font-size: 35rpx; text-align: center; width: 100%; margin-top: 30rpx; color: #e6e6e6;}
+.leftLables{ float: left;
+  width: 178rpx;
+height: 58rpx;
+line-height: 58rpx;
+background: #F38031;
+border: 1px solid #F38031;
+border-radius: 29px;
+text-align: center;
+
+font-size: 30rpx;
+font-family: Alibaba PuHuiTi;
+font-weight: 400;
+color: #FFFFFF;
+margin-top: 26rpx;
+}
+.leftLables1{ float: left;
+  width: 178rpx;
+height: 58rpx;
+line-height: 58rpx;
+background: #fff;
+border: 1px solid #F38031;
+border-radius: 29px;
+text-align: center;
+
+font-size: 30rpx;
+font-family: Alibaba PuHuiTi;
+font-weight: 400;
+color: #F38031;
+/* margin-top: 26rpx; */
+}
+.logistics image{
+  float: right;
+  width: 14rpx;
+   height: 24rpx;
+   margin-top: 45rpx;
+   margin-right: 30rpx;
+}
+.accept {
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background: #f38031;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 60rpx;
+  margin-top: 10rpx;
+}
+.topNull{font-size: 30rpx;height: 120rpx;
+  line-height: 120rpx;}
+.survey {
+  width: 100%;
+  line-height: 40rpx;
+  padding: 27rpx;
+  background: #F7F7F7;
+  border-radius: 3rpx;
+  font-size: 30rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 400;
+  color: #666666;
+  /* line-height: 85rpx; */
+  
+  margin-top: 30rpx;
+}
+
+.sponsor {
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid #D0D0D0;
+  padding-bottom: 20rpx;
+}
+
+.sponsorLeft {
+  float: left;
+}
+
+.tx {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 48rpx;
+  overflow: hidden;
+  float: left;
+  /* border: 1px solid #333; */
+  margin-top: 36rpx;
+  margin-right: 15rpx;
+}
+
+.tx image {
+  width: 100%;
+  height: 100%;
+}
+
+.sponsorCenter {
+  float: left;
+  margin-left: 58rpx;
+}
+
+.istext {
+  font-size: 30rpx;
+  color: #111111;
+  float: left;
+  font-weight: 600;
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+.istext text {
+  color: #F38031;
+  margin: 0 5rpx;
+}
+
+.star {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 10rpx;
+}
+
+.sponsorRight {
+  float: left;
+  margin-left: 58rpx;
+}
+
+.lContent {
+  padding-left: 30rpx;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  background: #fff;
+}
+
+.contentTitle {
+  color: #111111;
+  font-size: 32rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 600;
+  padding-top: 40rpx;
+}

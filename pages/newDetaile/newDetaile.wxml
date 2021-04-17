@@ -1,0 +1,191 @@
+<!--pages/newDetaile/newDetaile.wxml-->
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">出发地</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">目的地</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">日期</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">类型</view>
+</view>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <swiper-item class="swiper-item">
+    <!-- <view class="swiper-tab1">
+      <view class="swiper-tab-item1 {{currentTab1==0?'active':''}}" data-current="0" bindtap="clickTab">附近装货</view>
+      <view class="swiper-tab-item1 {{currentTab1==1?'active':''}}" data-current="1" bindtap="clickTab">出发地</view>
+    </view> -->
+    <view class="contents1">
+      <view class="selectAddress">
+        <view class="selectLeft">已选地区：</view>
+        <view class="selectRight">{{province}} {{city}} {{county}}</view>
+      </view>
+      <!-- <view class="detailedAdd">
+        <input type="text" placeholder="请输入详细地址门牌号"  value="{{men}}" placeholder-class="noinput" bindinput="goTips" />
+      </view> -->
+      <view class="cons">
+        <view class="titles">选择：全国</view>
+        <view class="conslist">
+          <view class="listview {{v1===index?'selectd':''}}" wx:for="{{provinces}}" data-val="{{value}}" data-value="省"
+            data-index="{{index}}" catchtap="qiehuan">{{item}}</view>
+        </view>
+
+        <view class="titles">选择：城市</view>
+        <view class="conslist">
+          <view class="listview {{v2===index?'selectd':''}}" wx:for="{{citys}}" data-val="{{value}}" data-value="市"
+            data-index="{{index}}" catchtap="qiehuan">{{item}}</view>
+        </view>
+        <view class="titles">选择：区</view>
+        <view class="conslist">
+          <view class="listview {{v3===index?'selectd':''}}" wx:for="{{countys}}" data-val="{{value}}" data-value="区"
+            data-index="{{index}}" catchtap="qiehuan">{{item}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="hei140"></view>
+    <!-- <view class="{{currentTab1 == 0 ? 'show':'hidden'}}">
+      <scroll-view>
+        <view class="contents1">
+          <view class="conlist" wx:for="{{list2}}" data-index="{{index}}" bindtap="goon">
+            <image src="../../images/dui.png" wx:if="{{item.on==true}}"></image> <text data-on="{{item.on}}"
+              class="{{item.on==true?'add':''}}">{{item.name}}</text>
+          </view>
+        </view>
+        <view class="hei140"></view>
+      </scroll-view>
+    </view> -->
+    <!-- <view class="{{currentTab1 == 1 ? 'show':'hidden'}}">
+      <scroll-view>
+        <view class="contents1">
+          <view class="selectAddress">
+            <view class="selectLeft">已选地区：</view>
+            <view class="selectRight">{{province}} {{city}} {{county}}</view>
+          </view>
+          <view class="cons">
+            <view class="titles">选择：全国</view>
+            <view class="conslist">
+              <view class="listview {{v1==index?'selectd':''}}" wx:for="{{provinces}}" data-val="{{value}}"
+                data-value="省" data-index="{{index}}" catchtap="qiehuan">{{item}}</view>
+            </view>
+
+            <view class="titles">选择：城市</view>
+            <view class="conslist">
+              <view class="listview {{v2==index?'selectd':''}}" wx:for="{{citys}}" data-val="{{value}}" data-value="市"
+                data-index="{{index}}" catchtap="qiehuan">{{item}}</view>
+            </view>
+            <view class="titles">选择：区</view>
+            <view class="conslist">
+              <view class="listview {{v3==index?'selectd':''}}" wx:for="{{countys}}" data-val="{{value}}" data-value="区"
+                data-index="{{index}}" catchtap="qiehuan">{{item}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="hei140"></view>
+      </scroll-view>
+    </view> -->
+
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view class="contents1">
+      <view class="selectAddress">
+        <view class="selectLeft">已选地区：</view>
+        <view class="selectRight">{{province8}} {{city8}} {{county8}}</view>
+      </view>
+      <!-- <view class="detailedAdd">
+        <input type="text" placeholder="请输入详细地址门牌号"  value="{{men1}}" placeholder-class="noinput" bindinput="goTips1" />
+      </view> -->
+      <view class="cons">
+        <view class="titles">选择：全国</view>
+        <view class="conslist">
+          <view class="listview {{v8===index?'selectd':''}}" wx:for="{{provinces8}}" data-val="{{value8}}" data-value="省"
+            data-index="{{index}}" catchtap="qiehuan8">{{item}}</view>
+        </view>
+
+        <view class="titles">选择：城市</view>
+        <view class="conslist">
+          <view class="listview {{v9===index?'selectd':''}}" wx:for="{{citys8}}" data-val="{{value8}}" data-value="市"
+            data-index="{{index}}" catchtap="qiehuan8">{{item}}</view>
+        </view>
+        <view class="titles">选择：区</view>
+        <view class="conslist">
+          <view class="listview {{v10===index?'selectd':''}}" wx:for="{{countys8}}" data-val="{{value8}}" data-value="区"
+            data-index="{{index}}" catchtap="qiehuan8">{{item}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="hei140"></view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <!-- <view class="canlendarBgView">
+      <view class="canlendarView">
+        <view class="canlendarTopView">
+          <view class="leftBgView" bindtap="handleCalendar" data-handle="prev">
+            <view class="leftView">《</view>
+          </view>
+          <view class="centerView">{{cur_year || "--"}} 年 {{cur_month || "--"}} 月</view>
+          <view class="rightBgView" bindtap="handleCalendar" data-handle="next">
+            <view class="rightView">》</view>
+          </view>
+        </view>
+        <view class="weekBgView">
+          <view class="weekView" wx:for="{{weeks_ch}}" wx:key="{{index}}" data-idx="{{index}}">{{item}}</view>
+        </view>
+        <view class="dateBgView">
+          <view wx:if="{{hasEmptyGrid}}" class="dateEmptyView" wx:for="{{empytGrids}}" wx:key="{{index}}"
+            data-idx="{{index}}">
+          </view>
+          <view class="dateView" wx:for="{{days}}" wx:key="{{index}}" data-idx="{{index}}" bindtap="dateSelectAction">
+            <view class="datesView {{index == todayIndex ? 'dateSelectView' : ''}}">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view> -->
+    <rili bindmyevent="onMyEvent" id='rili'></rili>
+    <view class="isconts" >
+      <view class="fa">出发时间 {{starTime}}</view>
+      <view class="tian">{{day}}天</view>
+      <view class="dao">到达时间 {{endTime}}</view>
+    </view>
+  </swiper-item>
+  <swiper-item class="swiper-item">
+    <view class="company-detail">
+      <view class="company-detail-content">
+        <view class="lineview">
+          <view class="lineviewLeft">发货日期</view>
+          <view class="lineviewRight">{{starTime}} 至 {{endTime}}
+            <!-- <image src="../../images/rightArrow.png"></image> -->
+          </view>
+        </view>
+        <view class="lineview1">
+          <view class="lineviewLeft">货品类型</view>
+          <view class="lineviewRight" bindtap="showAll">展开 <image src="../../images/dui.png"></image>
+          </view>
+        </view>
+        <view class="long-dec {{isFold?'show':'hide'}}">
+          <view class="listview {{typeIndex==index?'selectd':''}}" data-index="{{index}}" wx:for="{{selectList1}}"
+            data-id="{{item.id}}" data-value="{{item.value}}" bindtap="goIndex">{{item.name}}/{{item.unit}}</view>
+        </view>
+
+        <view class="lineview1">
+          <view class="lineviewLeft">货重/吨</view>
+          <view class="lineviewRight" bindtap="showAll1">展开 <image src="../../images/dui.png"></image>
+          </view>
+        </view>
+        <view class="long-dec {{isFold1?'show':'hide'}}">
+          <view class="listview {{typeIndex1==index?'selectd':''}}" data-index="{{index}}" wx:for="{{selectList2}}"
+            data-id="{{item.id}}" data-value="{{item.value}}" bindtap="goIndex1">{{item.value}}</view>
+        </view>
+
+        <view class="lineview1">
+          <view class="lineviewLeft1">货品数量/{{classEs}}</view>
+          <view class="lineviewRight1">
+            <input type="text" placeholder="请输入数量" bindinput="counts" value="{{countsTwo}}" />
+          </view>
+        </view>
+        <view class="hei140"></view>
+
+      </view>
+    </view>
+
+  </swiper-item>
+</swiper>
+<view class="bots">
+  <view class="botleft" bindtap="clears">清空筛选</view>
+  <view class="botright" bindtap="goNext">确认</view>
+</view>
